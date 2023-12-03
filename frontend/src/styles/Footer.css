@@ -23,42 +23,6 @@
     margin-left: 1rem;
   }
   
-  .links-container {
-    flex: 0.5;
-    margin-right: 0rem;
-    color: #FED85D;
-  }
-  
-  .links {
-    list-style: none;
-    padding: 0;
-  }
-
-  .links li {
-    margin-bottom: 10px;
-  }
-
-  .links a {
-    text-decoration: none;
-    color: #FED85D;
-    position: relative;
-  }
-  
-  .links a::after {
-    content: "";
-    display: block;
-    width: 0;
-    height: 2px;
-    background-color: #FED85D;
-    position: absolute;
-    bottom: -5px;
-    transition: width 0.3s ease;
-  }
-  
-  .links a:hover::after {
-    width: 100%;
-  }
-  
   .contact-container {
     flex: 1;
   }
@@ -84,11 +48,6 @@
     .logo {
       margin: 0 0;
       margin-top: 2rem;
-      text-align: center;
-    }
-  
-    .links-container {
-      color: #FED85D;
       text-align: center;
     }
   
