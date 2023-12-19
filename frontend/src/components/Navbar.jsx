@@ -28,10 +28,6 @@ const Navbar = () => {
             Koti
             <FontAwesomeIcon icon={faHouseChimney} className="fa-icon" />
           </Link>
-          <Link to="/Palvelut" onClick={handleLinkClick}>
-            Palvelut
-            <FontAwesomeIcon icon={faBolt} className="fa-icon" />
-          </Link>
           <Link to="/Hinnastot" onClick={handleLinkClick}>
             Hinnastot
             <FontAwesomeIcon icon={faCoins} className="fa-icon" />
