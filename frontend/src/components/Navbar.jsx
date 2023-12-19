@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBarsStaggered, faBolt, faCoins, faHouseChimney, faPhoneFlip, faTimes, faUsers } from '@fortawesome/free-solid-svg-icons';
-import '../styles/Navbar.css'
+import '../styles/Navbar.css';
 
 const Navbar = () => {
   const [showLinks, setShowLinks] = useState(false);
@@ -22,26 +23,27 @@ const Navbar = () => {
           <img src="sahko-dominus.png" alt="Sähkö Dominus Logo" className="sahkodominus-logo" loading='lazy'/>
         </div>
         <div className={`nav-links ${showLinks ? 'show' : ''}`}>
-          <a href="/" onClick={handleLinkClick}>
+          {/* Use Link component for navigation */}
+          <Link to="/" onClick={handleLinkClick}>
             Koti
             <FontAwesomeIcon icon={faHouseChimney} className="fa-icon" />
-          </a>
-          <a href="/Palvelut" onClick={handleLinkClick}>
+          </Link>
+          <Link to="/Palvelut" onClick={handleLinkClick}>
             Palvelut
             <FontAwesomeIcon icon={faBolt} className="fa-icon" />
-          </a>
-          <a href="/Hinnastot" onClick={handleLinkClick}>
+          </Link>
+          <Link to="/Hinnastot" onClick={handleLinkClick}>
             Hinnastot
             <FontAwesomeIcon icon={faCoins} className="fa-icon" />
-          </a>
-          <a href="/Meistä" onClick={handleLinkClick}>
+          </Link>
+          <Link to="/Meistä" onClick={handleLinkClick}>
             Meistä
             <FontAwesomeIcon icon={faUsers} className="fa-icon" />
-          </a>
-          <a href="/Yhteystiedot" onClick={handleLinkClick}>
+          </Link>
+          <Link to="/Yhteystiedot" onClick={handleLinkClick}>
             Yhteystiedot
             <FontAwesomeIcon icon={faPhoneFlip} className="fa-icon" />
-          </a>
+          </Link>
         </div>
         <FontAwesomeIcon
           icon={showLinks ? faTimes : faBarsStaggered}
