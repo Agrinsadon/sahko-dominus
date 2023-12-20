@@ -1,13 +1,10 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft, faChevronRight, faCoffee, faCode, faDesktop } from '@fortawesome/free-solid-svg-icons';
-import Navbar from './Navbar';
 import '../styles/Services.css';
 
 const Services = () => {
   const [startIndex, setStartIndex] = useState(0);
-  const [showLinks, setShowLinks] = useState(false);
-
 
   const boxes = [
     { icon: faCoffee, header: 'Cofwwee Service', text: 'Enjoy a cup of coffee with us.' },
@@ -31,8 +28,7 @@ const Services = () => {
 
   return (
     <div className="services">
-      <Navbar showLinks={showLinks} setShowLinks={setShowLinks} />
-      <h1 className="header">Palvelumme</h1>
+      <h1 className="header-services">Palvelumme</h1>
       <div className="boxes-container">
         <div className="arrow" onClick={handlePrev}>
           <FontAwesomeIcon icon={faChevronLeft} />

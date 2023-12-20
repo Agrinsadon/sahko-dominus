@@ -1,0 +1,106 @@
+.home {
+    font-family: 'Zen Antique Soft', sans-serif;
+    padding-top: 6rem;
+    height: 45rem;
+  }
+  
+  .home-main {
+    text-align: center;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .home-main h1 {
+    z-index: 1; /* Move the overlay behind the content */
+    font-size: 2.8rem;
+    color: #FED85D;
+    margin-bottom: 1rem;
+  }
+  
+  .home-main p {
+    z-index: 1; /* Move the overlay behind the content */
+
+    font-size: 17px;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    color: #FED85D;
+  }
+  
+  .home-main h1,
+  .home-main p {
+      opacity: 5;
+  }
+  
+  .home-pic-frame {
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .home-pic-frame::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    backdrop-filter: blur(7px); /* Adjust the blur amount as needed */
+    background-color: #13274fb7; /* Your specified color */
+    z-index: 0;
+  }
+
+  .buttons-container {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .cta-button {
+    font-family: 'Zen Antique Soft', sans-serif;
+    margin: 0 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 16px;
+    background-color: #FED85D;
+    color: #13274f;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #fed85db1; /* Adjust the color for the hover effect */
+  }
+
+@media screen and (max-width: 992px) {
+    .home {
+        padding-top: 0rem;
+        height: 42rem;
+      }
+      
+      .home-main {
+        top: 50%;
+      }
+      
+      .home-main h1 {
+        font-size: 1.9rem;
+      }
+      
+      .home-main p {
+        font-size: 15px;
+      }
+      
+      .cta-button {
+        padding: 0.4rem 0.7rem;
+        font-size: 15px;
+      }
+}

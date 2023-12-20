@@ -20,7 +20,7 @@ const Navbar = () => {
     <div className="screen">
       <div className="navbar">
         <div className="logo">
-          <img src="sahko-dominus.png" alt="Sähkö Dominus Logo" className="sahkodominus-logo" loading='lazy'/>
+          <img src="sahkodominus-logo.png" alt="Sähkö Dominus Logo" className="sahkodominus-logo" loading='lazy'/>
         </div>
         <div className={`nav-links ${showLinks ? 'show' : ''}`}>
           {/* Use Link component for navigation */}

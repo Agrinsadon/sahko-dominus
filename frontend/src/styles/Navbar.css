@@ -6,7 +6,7 @@
 }
 
 .screen {
-max-width: 1433px;
+max-width: 1450px;
 margin: 0 auto;
 }
 
@@ -28,7 +28,7 @@ right: 0;
 }
 
 .sahkodominus-logo {
-width: 250px;
+width: 240px;
 height: 70px;
 }
 
@@ -63,9 +63,10 @@ display: none;
 
 @media screen and (max-width: 992px) {
 .sahkodominus-logo {
-width: 200px;
-height: 55px;
-margin-left: 10px;
+width: 170px;
+height: 50px;
+margin-left: 20px;
+margin-top: 5px;
 }
 
 .navbar {
