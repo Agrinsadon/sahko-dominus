@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Navbar from './Navbar';
 import Services from './Services';
-import '../styles/Home.css'; // Import the CSS file for styling
+import '../styles/Home.css';
 
 const Home = () => {
   const [showLinks, setShowLinks] = useState(false);
