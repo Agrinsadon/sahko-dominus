@@ -1,30 +1,38 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronLeft, faChevronRight, faCoffee, faCode, faDesktop } from '@fortawesome/free-solid-svg-icons';
+import { faChevronLeft, faChevronRight, faCoffee, faLightbulb, faPlug, faTowerCell, faBolt, faCompassDrafting, faSink, faUtensils, faBathtub } from '@fortawesome/free-solid-svg-icons';
 import '../styles/Services.css';
 
 const Services = () => {
   const [startIndex, setStartIndex] = useState(0);
 
   const boxes = [
-    { icon: faCoffee, header: 'Cofwwee Service', text: 'Enjoy a cup of coffee with us.' },
-    { icon: faCoffee, header: 'Cofsee Service', text: 'Enjoy a cup of coffee with us.' },
-    { icon: faCoffee, header: 'Cofdee Service', text: 'Enjoy a cup of coffee with us.' },
-    { icon: faCoffee, header: 'Cofefee Service', text: 'Enjoy a cup of coffee with us.' },
-    { icon: faCoffee, header: 'Coeffee Service', text: 'Enjoy a cup of coffee with us.' },
-    { icon: faCoffee, header: 'Coffsfe Service', text: 'Enjoy a cup of coffee with us.' },
-    { icon: faCoffee, header: 'Coffee Service', text: 'Enjoy a cup of coffee with us.' }
+    { icon: faTowerCell, header: 'Atk- ja antenniasennukset', text: 'Enjoy a cup of coffee with us.' },
+    { icon: faBolt, header: 'Sähköasennukset', text: 'Enjoy a cup of coffee with us.' },
+    { icon: faPlug, header: 'Pistorasian asennus + huolto', text: 'Enjoy a cup of coffee with us.' },
+    { icon: faLightbulb, header: 'Valaistuksen asennus + huolto', text: 'Enjoy a cup of coffee with us.' },
+    { icon: faCompassDrafting, header: 'Sähköurakointi', text: 'Enjoy a cup of coffee with us.' },
+    { icon: faBathtub, header: 'Kylpyhuoneremontti', text: 'Enjoy a cup of coffee with us.' },
+    { icon: faUtensils, header: 'Keittiöremontti', text: 'Enjoy a cup of coffee with us.' }
   ];
 
-  const visibleBoxes = boxes.slice(startIndex, startIndex + 3);
+  const calculateIndex = (step) => (prevIndex) => (prevIndex + step + boxes.length) % boxes.length;
 
   const handlePrev = () => {
-    setStartIndex((prevIndex) => (prevIndex > 0 ? prevIndex - 1 : boxes.length - 3));
+    setStartIndex(calculateIndex(-1));
   };
 
   const handleNext = () => {
-    setStartIndex((prevIndex) => (prevIndex < boxes.length - 3 ? prevIndex + 1 : 0));
+    setStartIndex(calculateIndex(1));
   };
+
+  const getVisibleBoxes = () => [
+    boxes[calculateIndex(-1)(startIndex)],
+    boxes[startIndex],
+    boxes[calculateIndex(1)(startIndex)],
+  ];
+
+  const visibleBoxes = getVisibleBoxes();
 
   return (
     <div className="services">
@@ -35,12 +43,13 @@ const Services = () => {
         </div>
         {visibleBoxes.map((box, index) => (
           <div
-            key={index + startIndex}
+            key={index}
             className={`box ${index === 1 ? 'active' : 'half-faded'}`}
             style={{
               boxShadow: '0 0 10px rgba(0, 0, 0, 0.3)',
               borderRadius: '8px',
               transform: index === 1 ? 'scale(1.2)' : 'none',
+              transition: 'transform 0.5s ease-in-out, opacity 0.5s ease-in-out', // Added transition property
             }}
           >
             <div className="box-content">
@@ -57,4 +66,5 @@ const Services = () => {
     </div>
   );
 };
+
 export default Services;

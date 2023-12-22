@@ -1,6 +1,11 @@
+@font-face {
+  font-family: 'Nabla';
+  src: url('../font/Nabla-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 .home {
-    font-family: 'Zen Antique Soft', sans-serif;
     padding-top: 0rem;
     height: 51rem;
   }
@@ -17,6 +22,7 @@
   }
   
   .home-main h1 {
+    font-family: 'Nabla', sans-serif;
     z-index: 1; /* Move the overlay behind the content */
     font-size: 2.8rem;
     color: #FED85D;
@@ -24,8 +30,8 @@
   }
   
   .home-main p {
+    font-family: 'Zen Antique Soft', sans-serif;
     z-index: 1; /* Move the overlay behind the content */
-
     font-size: 17px;
     margin-left: 5rem;
     margin-right: 5rem;
@@ -65,7 +71,7 @@
     justify-content: center;
   }
   
-  .cta-button {
+  .cta1-button {
     font-family: 'Zen Antique Soft', sans-serif;
     margin: 0 1rem;
     padding: 0.5rem 1rem;
@@ -74,12 +80,31 @@
     color: #13274f;
     border: none;
     cursor: pointer;
-    border-radius: 4px;
+    border-radius: 7px;
     transition: background-color 0.3s ease;
   }
   
-  .cta-button:hover {
-    background-color: #fed85db1; /* Adjust the color for the hover effect */
+  .cta1-button:hover {
+    background-color: #fed85db1;
+  }
+
+  .cta2-button {
+    font-family: 'Zen Antique Soft', sans-serif;
+    margin: 0 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 16px;
+    background-color: transparent;
+    border: 2px solid #FED85D;
+    cursor: pointer;
+    border-radius: 7px;
+    color: #FED85D;
+    transition: background-color 0.3s ease;
+  }
+  
+  
+
+  .cta2-button:hover {
+    background-color: #fed85db1; 
   }
 
 @media screen and (max-width: 992px) {

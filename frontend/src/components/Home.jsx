@@ -8,15 +8,15 @@ const Home = () => {
 
   return (
     <div className='screen'>
+    <Navbar showLinks={showLinks} setShowLinks={setShowLinks} />
       <div className="home">
-        <Navbar showLinks={showLinks} setShowLinks={setShowLinks} />
         <div className='home-pic-frame' style={{ backgroundImage: `url(/Home.png)`}} loading="lazy" decoding="async">
         <div className='home-main'>
           <h1>Mestari sähköisissä tilanteissa</h1>
           <p>Varaa maksuton kartoitus!</p>
           <div className="buttons-container">
-              <button className="cta-button">Ota yhteyttä</button>
-              <button className="cta-button">Hinnastot</button>
+              <button className="cta1-button">Ota yhteyttä</button>
+              <button className="cta2-button">Hinnastot</button>
           </div>
         </div>
         </div>
