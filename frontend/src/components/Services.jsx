@@ -9,8 +9,8 @@ const Services = () => {
   const boxes = [
     { icon: faTowerCell, header: 'Atk- ja antenniasennukset', text: 'Enjoy a cup of coffee with us.' },
     { icon: faBolt, header: 'Sähköasennukset', text: 'Enjoy a cup of coffee with us.' },
-    { icon: faPlug, header: 'Pistorasian asennus + huolto', text: 'Enjoy a cup of coffee with us.' },
-    { icon: faLightbulb, header: 'Valaistuksen asennus + huolto', text: 'Enjoy a cup of coffee with us.' },
+    { icon: faPlug, header: 'Pistorasian asennus ja huolto', text: 'Enjoy a cup of coffee with us.' },
+    { icon: faLightbulb, header: 'Valaistuksen asennus ja huolto', text: 'Enjoy a cup of coffee with us.' },
     { icon: faCompassDrafting, header: 'Sähköurakointi', text: 'Enjoy a cup of coffee with us.' },
     { icon: faBathtub, header: 'Kylpyhuoneremontti', text: 'Enjoy a cup of coffee with us.' },
     { icon: faUtensils, header: 'Keittiöremontti', text: 'Enjoy a cup of coffee with us.' }
