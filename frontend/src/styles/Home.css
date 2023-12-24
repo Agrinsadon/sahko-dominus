@@ -152,9 +152,9 @@
   .logo-cover {
     margin-top: 2.6rem;
     top: 40%;
-    width: 190px;
-    height: 55px;
-    transition: opacity 3s ease-in-out;
 
+    width: 200px;
+    height: 55px;
+    transition: opacity 5s ease-in-out;
   }
 }
