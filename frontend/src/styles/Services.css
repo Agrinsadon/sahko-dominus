@@ -28,6 +28,7 @@
     opacity: 1;
     width: 360px;
     height: 300px;
+    color: #13274F;
   }
   
   .box.half-faded {
@@ -62,33 +63,40 @@
   }
   
   @media screen and (max-width: 992px) {
+    .services {
+      height: 27rem;
+    }
+
     .header-services {
-      font-size: 36px;
+      font-size: 32px;
       margin-top: 40px;
       margin-bottom: 50px;
-      color: #13274F;
+      color: #FED85D;
     }
 
     .box-icon {
       margin-bottom: 0px;
-      width: 30px;
-      height: 25px;
+      width: 25px;
+      height: 20px;
     }
 
     .box h3 {
-      font-size: 19px;
+      margin-left: 1rem;
+      margin-right: 1rem;
+      font-size: 16px;
+      text-align: center;
     }
 
     .box p {
-      font-size: 15px;
+      font-size: 14px;
       margin: 0;
     }
 
     .box {
-      padding: 35px;
-      margin: 0 30px;
-      transition: opacity 1s ease-in-out;
-      height: 150px;
+      padding: 0px;
+      margin: 0 25px;
+      width: 230px;
+      height: 200px;
     }
 
     .box.half-faded {
@@ -97,6 +105,12 @@
       width: 0;
       padding: 0;
       margin: 0;
+    }
+
+    .arrow {
+      font-size: 28px;
+      margin: 0 8px;
+      color: #FED85D;
     }
 
   }

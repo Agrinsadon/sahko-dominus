@@ -97,6 +97,26 @@
     background-color: #fed85db1; 
   }
 
+  .cover {
+    background-color: #13274f;
+    height: 100%;
+    width: 100%;
+    transition: height 1.3s ease-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+  }
+  
+  .logo {
+    width: 400px;
+    opacity: 1;
+    transition: opacity 1s ease-out;
+  }
+  
 @media screen and (max-width: 992px) {
     .home {
         padding-top: 0rem;
@@ -115,8 +135,19 @@
         font-size: 15px;
       }
       
-      .cta-button {
-        padding: 0.4rem 0.7rem;
+      .cta1-button {
+        padding: 0.6rem 0.5rem;
         font-size: 15px;
+      }
+
+      .cta2-button {
+        padding: 0.3rem 0.7rem;
+        font-size: 15px;
+      }
+
+      .logo {
+        width: 250px;
+        opacity: 1;
+        transition: opacity 1s ease-out;
       }
 }

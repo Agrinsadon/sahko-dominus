@@ -10,7 +10,7 @@ const Services = () => {
     { icon: faTowerCell, header: 'Atk- ja antenniasennukset', text: 'Enjoy a cup of coffee with us.' },
     { icon: faBolt, header: 'Sähköasennukset', text: 'Enjoy a cup of coffee with us.' },
     { icon: faPlug, header: 'Pistorasian asennus ja huolto', text: 'Enjoy a cup of coffee with us.' },
-    { icon: faLightbulb, header: 'Valaistuksen asennus ja huolto', text: 'Enjoy a cup of coffee with us.' },
+    { icon: faLightbulb, header: 'Valaistuksen asennus  huolto', text: 'Enjoy a cup of coffee with us.' },
     { icon: faCompassDrafting, header: 'Sähköurakointi', text: 'Enjoy a cup of coffee with us.' },
     { icon: faBathtub, header: 'Kylpyhuoneremontti', text: 'Enjoy a cup of coffee with us.' },
     { icon: faUtensils, header: 'Keittiöremontti', text: 'Enjoy a cup of coffee with us.' }
@@ -36,7 +36,7 @@ const Services = () => {
 
   return (
     <div className="services">
-      <h1 className="header-services">Palvelumme</h1>
+      <h1 className="header-services">Palvelut</h1>
       <div className="boxes-container">
         <div className="arrow" onClick={handlePrev}>
           <FontAwesomeIcon icon={faChevronLeft} />
