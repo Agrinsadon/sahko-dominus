@@ -111,45 +111,45 @@
     z-index: 9999;
   }
   
-  .logo-cover {
-    width: 400px;
-    opacity: 1;
-    transition: opacity 1s ease-out;
-    margin: 0 auto; /* Center the logo horizontally */
-    display: block;
+.logo-cover {
+  width: 400px;
+  opacity: 1;
+  transition: opacity 1s ease-out;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 992px) {
+.home {
+    padding-top: 0rem;
+    height: 42rem;
+  } 
+  
+  .home-main {
+    top: 50%;
   }
   
-@media screen and (max-width: 992px) {
-    .home {
-        padding-top: 0rem;
-        height: 42rem;
-      }
-      
-      .home-main {
-        top: 50%;
-      }
-      
-      .home-main h1 {
-        font-size: 1.9rem;
-      }
-      
-      .home-main p {
-        font-size: 15px;
-      }
-      
-      .cta1-button {
-        padding: 0.6rem 0.5rem;
-        font-size: 15px;
-      }
+  .home-main h1 {
+    font-size: 1.9rem;
+  }
+  
+  .home-main p {
+    font-size: 15px;
+  }
+  
+  .cta1-button {
+    padding: 0.6rem 0.5rem;
+    font-size: 15px;
+  }
 
-      .cta2-button {
-        padding: 0.3rem 0.7rem;
-        font-size: 15px;
-      }
+  .cta2-button {
+    padding: 0.3rem 0.7rem;
+    font-size: 15px;
+  }
 
-      .logo-cover {
-        width: 250px;
-        opacity: 1;
-        transition: opacity 1s ease-out;
-      }
+  .logo-cover {
+    width: 250px;
+  }
 }
