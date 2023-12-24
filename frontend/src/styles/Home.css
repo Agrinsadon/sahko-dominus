@@ -111,10 +111,12 @@
     z-index: 9999;
   }
   
-  .logo {
+  .logo-cover {
     width: 400px;
     opacity: 1;
     transition: opacity 1s ease-out;
+    margin: 0 auto; /* Center the logo horizontally */
+    display: block;
   }
   
 @media screen and (max-width: 992px) {
@@ -145,7 +147,7 @@
         font-size: 15px;
       }
 
-      .logo {
+      .logo-cover {
         width: 250px;
         opacity: 1;
         transition: opacity 1s ease-out;
