@@ -15,7 +15,7 @@ const Home = () => {
 
     const logoTimeout = setTimeout(() => {
       setShowLogo(false);
-    }, 2000);
+    }, 1900);
 
     return () => {
       clearTimeout(coverTimeout);
