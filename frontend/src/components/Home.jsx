@@ -30,6 +30,9 @@ const Home = () => {
         <div className="cover" style={{ height: showCover ? '100vh' : '0' }}>
           <img src="/sahkodominus-logo.png" alt="Logo" className="logo-cover" style={{ opacity: showLogo ? 1 : 0 }} />
         </div>
+        <div className="cover-small" style={{ height: showCover ? '100vh' : '0' }}>
+          <img src="/sahkodominus-logo.png" alt="Logo" className="logo-cover-small" style={{ opacity: showLogo ? 1 : 1 }} />
+        </div>
         <div className="home">
           <div className='home-pic-frame' style={{ backgroundImage: `url(/Home.png)` }} loading="lazy" decoding="async">
             <div className='home-main'>

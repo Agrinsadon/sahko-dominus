@@ -108,7 +108,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 9999;
+    z-index: 9998;
   }
   
 .logo-cover {
@@ -120,6 +120,11 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+.cover-small {
+   display: none;
+}
+
 
 @media screen and (max-width: 992px) {
 .home {
@@ -150,11 +155,37 @@
   }
 
   .logo-cover {
-    margin-top: 2.6rem;
-    top: 40%;
+    display: none;
+  }
 
+  .cover-small {
+    background-color: #13274f;
+    height: 100%;
+    width: 100%;
+    transition: height 1s ease-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9998;
+  }
+
+  .sahkodominus-logo {
+    display: none;
+  }
+  
+  .logo-cover-small {
+    padding-top: 5rem;
     width: 200px;
     height: 55px;
-    transition: opacity 5s ease-in-out;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+    position: absolute;
+    top: 43%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
   }
 }

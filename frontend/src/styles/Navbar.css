@@ -67,10 +67,11 @@ width: 200px;
 height: 55px;
 margin-left: 88.6px;
 margin-top: 5px;
+display: flex;
 }
 
 .navbar {
-padding: 0.5rem 0rem;
+padding: 1.6rem 0rem;
 }
 
 .nav-links {
