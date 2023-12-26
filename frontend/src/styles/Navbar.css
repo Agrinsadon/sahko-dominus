@@ -25,6 +25,8 @@ position: fixed;
 top: 0;
 left: 0;
 right: 0;
+box-shadow: 0 2px 4px rgba(254, 216, 93, 0.5); /* Updated box-shadow color */
+
 }
 
 .sahkodominus-logo {

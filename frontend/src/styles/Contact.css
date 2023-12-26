@@ -2,9 +2,129 @@
     display: none;
 }
 
+.contact {
+    font-family: 'Zen Antique Soft', sans-serif;
+    padding-top: 9rem;
+    text-align: center;
+    background-color: #13274f;
+    height: 50rem;
+  }
+  
+  .contact h2 {
+    color: black;
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .contact h2 .highlight {
+    color: #FED85D; /* Color for "24/7" */
+  }
+  
+  .contact-form {
+    color: #FED85D;
+    display: flex;
+    justify-content: center;
+    width: 55%;
+    align-items: center;
+    border-radius: 20px;
+    background-color: rgba(196, 207, 230, 0.043);
+    padding: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .left-inputs,
+  .right-inputs {
+    margin: 0 13px;
+    height: 20rem;
+  }
+  
+  .left-inputs h3,
+  .right-inputs h3 {
+    margin-left: 1rem;
+    font-size: 16px;
+    margin-bottom: 8px;
+    text-align: left;
+  }
+
+  .inputName,
+  .inputEmail {
+    border-style: none;
+    width: 21rem;
+    padding: 22.5px;
+    margin-bottom: 16px;
+    border-radius: 15px;
+  }
+
+  .inputMessage {
+    border-style: none;
+    height: 50%;
+    width: 19rem;
+    padding: 15px;
+    margin-bottom: 16px;
+    border-radius: 15px;
+    flex-direction: column;
+  }
+  
+ .button-contact {
+    font-size: 14px;
+    font-family: 'Zen Antique Soft', sans-serif;
+    margin-left: 0rem;
+    width: 340px;
+    padding: 18px;
+    background-color: #FED85D;
+    color: #13274f;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  button:hover {
+    background-color: #fed85d98;
+  }
+
+.contact-template {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  .template-box {
+    margin-right: 3rem;
+    border-radius: 20px;
+    padding: 0rem;
+    background-color: #FED85D;
+    display: flex;
+    align-items: center;
+  }
+  
+  .template-logo {
+    font-size: 25px;
+    margin-right: 2rem;
+    margin-left: 2rem;
+  }
+
+  .template-box p {
+    margin-right: 2rem;
+    margin-top: 2px;
+  }
+
+  .template-box h4 {
+    margin-right: 2rem;
+    margin-bottom: 10px;
+  }
+
+  
 @media screen and (max-width: 992px) {
 .second-logo {
-    position: fixed;
+    position: absolute;
     margin-left: 88px;
     margin-top: 13px;
     width: 200px;
