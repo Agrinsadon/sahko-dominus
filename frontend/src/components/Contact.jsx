@@ -1,74 +1,83 @@
-// Contact.js
-import React, { useState } from 'react';
+import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowRight ,faCircle, faBuilding, faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import Navbar from './Navbar';
+import { faArrowRight, faEnvelope, faPhone, faGlobe } from '@fortawesome/free-solid-svg-icons';
+import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import '../styles/Contact.css';
 
-// ... (previous imports)
-
 const Contact = () => {
-  const [showLinks, setShowLinks] = useState(false);
-
   return (
     <div className='screen'>
-      <img src="/sahkodominus-logo.png" alt="Logo" className="second-logo" />
-      <Navbar showLinks={showLinks} setShowLinks={setShowLinks} />
       <div className="contact">
-        <h2>
-          Olemme <span className="highlight">24/7</span> valmiina auttamaan sinua milloin vain
-        </h2>
-        <div className="contact-form">
-          <div className="left-inputs">
-            <h3>Nimi</h3>
-            <input type="text" className="inputName" placeholder="Syötä nimi" />
-            <h3>Sähköposti</h3>
-            <input type="email" className="inputEmail" placeholder="Syötä sähköposti" />
-            <p>VARAA MAKSUTON KARTOITUS!</p>
+        <div className="contact-square">
+        <div className="input-group-row">
+          <div className="input-group">
+            <label htmlFor="name">Nimi</label>
+            <input type="text" id="name" placeholder="Syötä nimi" />
           </div>
-
-          <div className="right-inputs">
-            <h3>Viesti</h3>
-            <input type="text" className="inputMessage" placeholder="Syötä viestisi..." />
-            <button className='button-contact'>
-              <span>Lähetä</span>
-              <FontAwesomeIcon icon={faArrowRight} />
-            </button>
+          <div className="input-group">
+            <label htmlFor="email">Sähköposti</label>
+            <input type="text" id="email" placeholder="Syötä sähköposti" />
           </div>
+          </div>
+          <div className="input-group-row">
+            <div className="input-group">
+              <label htmlFor="phone">Puhelin</label>
+              <input type="text" id="phone" placeholder="Syötä puhelinnumero" />
+            </div>
+            <div className="input-group">
+              <label htmlFor="address">Osoite</label>
+              <input type="text" id="address" placeholder="Syötä Osoite" />
+            </div>
+          </div>
+          <div className="input-group">
+            <label htmlFor="message">Viesti</label>
+            <textarea type="text" id="message" placeholder="Syötä viesti..." />
+          </div>
+          <button className='button-contact'>
+            <span>Lähetä</span>
+            <FontAwesomeIcon icon={faArrowRight} />
+          </button>
         </div>
+      </div>
+      <div className="contact-template">
 
-        {/* Three templates under the contact form */}
-        <div className="contact-template">
-          {/* Template 1: Logo on the left */}
           <div className="template-box">
-            <FontAwesomeIcon icon={faBuilding} className="template-logo" />
+            <div className="template-circle">
+              <FontAwesomeIcon icon={faEnvelope} className="template-logo" />
+            </div>
             <div>
-              <h4>Phone Number</h4>
+              <h4>Sähköposti</h4>
+              <p>tush.tush@gmail.com</p>
+            </div>
+          </div>
+
+          <div className="template-box">
+            <div className="template-circle">
+              <FontAwesomeIcon icon={faPhone} className="template-logo" />
+            </div>
+            <div>
+              <h4>Puhelinnumero</h4>
               <p>+123 456 789</p>
             </div>
           </div>
 
-          {/* Template 2: Phone number header on the left */}
           <div className="template-box">
-            <FontAwesomeIcon icon={faBuilding} className="template-logo" />
-            <div>
-              <h4>Phone Number</h4>
-              <p>+123 456 789</p>
+            <div className="template-circle">
+              <FontAwesomeIcon icon={faGlobe} className="template-logo" />
+            </div>
+            <div className="social-icons-container">
+              <a href="https://www.facebook.com/profile.php?id=61554687897698" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faFacebook} className="social-icon" />
+              </a>
+              <a href="https://www.instagram.com/diaconuri/" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faInstagram} className="social-icon" />
+              </a>
             </div>
           </div>
 
-          {/* Template 3: Logo and phone number side by side */}
-          <div className="template-box">
-            <FontAwesomeIcon icon={faEnvelope} className="template-logo" />
-            <div>
-              <p>+123 456 789</p>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   );
 };
 
 export default Contact;
-

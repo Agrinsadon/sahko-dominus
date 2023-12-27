@@ -1,77 +1,64 @@
-.second-logo {
-    display: none;
-}
-
 .contact {
     font-family: 'Zen Antique Soft', sans-serif;
-    padding-top: 9rem;
-    text-align: center;
-    background-color: #13274f;
-    height: 50rem;
-  }
-  
-  .contact h2 {
-    color: black;
-    font-size: 35px;
-    text-align: center;
-    margin-bottom: 50px;
-  }
-  
-  .contact h2 .highlight {
-    color: #FED85D; /* Color for "24/7" */
-  }
-  
-  .contact-form {
-    color: #FED85D;
     display: flex;
     justify-content: center;
-    width: 55%;
     align-items: center;
-    border-radius: 20px;
-    background-color: rgba(196, 207, 230, 0.043);
-    padding: 2rem;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .left-inputs,
-  .right-inputs {
-    margin: 0 13px;
-    height: 20rem;
+    margin-top: 5rem;
   }
   
-  .left-inputs h3,
-  .right-inputs h3 {
-    margin-left: 1rem;
-    font-size: 16px;
-    margin-bottom: 8px;
-    text-align: left;
-  }
-
-  .inputName,
-  .inputEmail {
-    border-style: none;
-    width: 21rem;
-    padding: 22.5px;
-    margin-bottom: 16px;
-    border-radius: 15px;
-  }
-
-  .inputMessage {
-    border-style: none;
-    height: 50%;
-    width: 19rem;
-    padding: 15px;
-    margin-bottom: 16px;
-    border-radius: 15px;
+  .contact-square {
+    width: 700px;
+    height: auto;
+    border-radius: 20px;
+    background-color: rgba(3, 0, 28, 0.204);
+    overflow: hidden;
+    padding: 20px;
+    display: flex;
     flex-direction: column;
+  }
+
+  .input-group-row {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .input-group-row .input-group {
+    width: 49%;
+  }
+  
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  .input-group input {
+    margin-top: 0.5rem;
+    padding: 15px;
+    border-radius: 20px;
+    border-style: none;
+    box-sizing: border-box;
+    font-size: 13px;
+  }
+
+  .input-group label {
+    margin-left: 0.5rem;
+  }
+
+  .input-group textarea {
+    margin-top: 0.5rem;
+    height: 6.4rem;
+    padding: 14px;
+    border-radius: 20px;
+    border-style: none;
+    font-size: 12px;
   }
   
  .button-contact {
     font-size: 14px;
     font-family: 'Zen Antique Soft', sans-serif;
-    margin-left: 0rem;
-    width: 340px;
+    margin-bottom: 1rem;
+    width: 320px;
     padding: 18px;
     background-color: #FED85D;
     color: #13274f;
@@ -81,6 +68,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-left: auto;
   }
   
   button:hover {
@@ -88,41 +76,150 @@
   }
 
 .contact-template {
+    margin-top: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 30px;
     margin-right: auto;
     margin-left: auto;
+    margin-bottom: 3rem;
   }
   
   .template-box {
-    margin-right: 3rem;
+    font-family: 'Zen Antique Soft', sans-serif;
+    height: 80px;
+    width: auto;
+    margin-right: 1rem;
+    margin-left: 1rem;
     border-radius: 20px;
     padding: 0rem;
     background-color: #FED85D;
     display: flex;
     align-items: center;
+    justify-content: center;
+  }
+
+  .template-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px; /* Adjust the circle size as needed */
+    height: 50px; /* Adjust the circle size as needed */
+    border: 2px solid beige;
+    border-radius: 50%;
+    margin-left: 1rem; /* Adjust the distance between the circle and the logo */
+    margin-right: 1rem;
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  .template-circle:hover,
+  .template-logo:hover {
+    transform: scale(1.1); /* Scale up on hover */
+    background-color: aliceblue;
+    color: aqua;
+  }
+
+
+.social-icon {
+    font-size: 20px; /* Adjust the size of social icons */
+    margin-right: 1rem; /* Adjust the spacing between social icons */
+    color: #13274f; /* Set the color for the icons */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+    cursor:pointer;
+  }
+  
+  .template-box:hover .social-icon {
+    transform: scale(1.1); /* Scale up social icons on hover */
   }
   
   .template-logo {
     font-size: 25px;
     margin-right: 2rem;
     margin-left: 2rem;
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
   }
-
+  
   .template-box p {
     margin-right: 2rem;
-    margin-top: 2px;
+    margin-top: 1px;
   }
 
   .template-box h4 {
     margin-right: 2rem;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
   }
 
   
 @media screen and (max-width: 992px) {
+.contact {
+    margin-top: 4rem;
+    }
+    
+.contact-square {
+    max-width: 100%;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+    
+.input-group input {
+    font-size: 11px;
+}
+
+.input-group label {
+    font-size: 14px;
+}
+
+.input-group textarea {
+    font-size: 11px;
+}
+    
+.button-contact {
+    font-size: 13px;
+    margin-bottom: 0.5rem;
+    width: 320px;
+    margin-left: 0;
+}
+
+
+.contact-template {
+    margin-top: 0.5rem;
+    display: block;
+    height: 18rem;
+}
+    
+.template-box {
+    height: 70px;
+    margin-top: 1rem;
+    width: fit-content;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.template-circle {
+    width: 40px; 
+    height: 40px;
+  }
+
+.social-icon {
+    font-size: 18px; 
+}
+
+.template-logo {
+    font-size: 18px;
+}
+
+.template-box p {
+    margin-right: 2rem;
+    margin-top: 1px;
+    font-size: 14px;
+}
+
+.template-box h4 {
+    margin-right: 2rem;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
 .second-logo {
     position: absolute;
     margin-left: 88px;

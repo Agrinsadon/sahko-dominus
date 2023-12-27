@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Navbar from './Navbar';
 import '../styles/Home.css';
 import Service from './Service';
+import Contact from './Contact';
 
 const Home = () => {
   const [showLinks, setShowLinks] = useState(false);
@@ -47,6 +48,7 @@ const Home = () => {
         </div>
         <Service />
       </div>
+      <Contact />
     </div>
   );
 };
