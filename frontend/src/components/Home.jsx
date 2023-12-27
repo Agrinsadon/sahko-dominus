@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Navbar from './Navbar';
-import Services from './Services';
 import '../styles/Home.css';
+import Service from './Service';
 
 const Home = () => {
   const [showLinks, setShowLinks] = useState(false);
@@ -44,8 +44,8 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <Services />
         </div>
+        <Service />
       </div>
     </div>
   );
