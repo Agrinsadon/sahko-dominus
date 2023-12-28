@@ -18,11 +18,11 @@ const Contact = () => {
     setFormData({ ...formData, [id]: value });
   };
 
-  const apiUrl = process.env.REACT_APP_API_URL_EMAIL;
+
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    fetch(apiUrl, {
+    fetch('https://sahkodominus.onrender.com/email/send-email', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
