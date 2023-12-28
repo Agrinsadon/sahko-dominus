@@ -18,8 +18,10 @@ const Contact = () => {
     setFormData({ ...formData, [id]: value });
   };
 
+  const apiUrl = process.env.REACT_APP_API_URL_EMAI;
+
   const handleSubmit = () => {
-    fetch('email/send-email', {
+    fetch(apiUrl, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
