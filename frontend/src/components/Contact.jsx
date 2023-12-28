@@ -20,7 +20,7 @@ const Contact = () => {
 
   const apiUrl = process.env.REACT_APP_API_URL_EMAIL;
 
-  const handleSubmit = () => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     fetch(apiUrl, {
       method: 'POST',
