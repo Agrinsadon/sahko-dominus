@@ -21,6 +21,7 @@ const Contact = () => {
   const apiUrl = process.env.REACT_APP_API_URL_EMAI;
 
   const handleSubmit = () => {
+    e.preventDefault();
     fetch(apiUrl, {
       method: 'POST',
       headers: {
@@ -28,20 +29,25 @@ const Contact = () => {
       },
       body: JSON.stringify(formData),
     })
-      .then((response) => response.json())
-      .then((data) => {
-        console.log(data);
-        setFormData({
-          name: '',
-          email: '',
-          phone: '',
-          address: '',
-          message: '',
-        });
-      })
-      .catch((error) => {
-        console.error('Error sending email:', error);
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error(`Request failed with status ${response.status}`);
+      }
+      return response.json();
+    })
+    .then((data) => {
+      console.log(data);
+      setFormData({
+        name: '',
+        email: '',
+        phone: '',
+        address: '',
+        message: '',
       });
+    })
+    .catch((error) => {
+      console.error(error);
+    })
   };
 
   return (
