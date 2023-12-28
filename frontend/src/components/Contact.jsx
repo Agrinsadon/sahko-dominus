@@ -18,7 +18,7 @@ const Contact = () => {
     setFormData({ ...formData, [id]: value });
   };
 
-  const apiUrl = process.env.REACT_APP_API_URL_EMAI;
+  const apiUrl = process.env.REACT_APP_API_URL_EMAIL;
 
   const handleSubmit = () => {
     e.preventDefault();
