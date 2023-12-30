@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Navbar from './Navbar';
+import { Element } from 'react-scroll';
 import '../styles/Home.css';
 import Service from './Service';
 import Contact from './Contact';
@@ -46,9 +47,9 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <Service />
+        <Element name="service"> <Service /> </Element>
       </div>
-      <Contact />
+      <Element name="contact-section"> <Contact /> </Element>
     </div>
   );
 };

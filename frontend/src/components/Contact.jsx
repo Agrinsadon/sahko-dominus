@@ -5,6 +5,7 @@ import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import '../styles/Contact.css';
 
 const Contact = () => {
+  const [isSending, setIsSending] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -22,6 +23,7 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setIsSending(true);
     fetch('https://sahkodominus.onrender.com/email/send-email', {
       method: 'POST',
       headers: {
@@ -48,10 +50,13 @@ const Contact = () => {
     .catch((error) => {
       console.error(error);
     })
+    .finally(() => {
+      setIsSending(false);
+    });
   };
 
   return (
-    <div className='screen'>
+    <div>
       <div className="contact">
         <div className="contact-square">
           <div className="input-group-row">
@@ -78,10 +83,12 @@ const Contact = () => {
             <label htmlFor="message">Viesti</label>
             <textarea type="text" id="message" placeholder="Syötä viesti..." value={formData.message} onChange={handleInputChange} />
           </div>
-          <button className='button-contact' onClick={handleSubmit}>
-            <span>Lähetä</span>
+          
+          <button className={`button-contact ${isSending ? 'sending' : ''}`} onClick={handleSubmit}>
+            <span>{isSending ? 'Lähetetään...' : 'Lähetä'}</span>
             <FontAwesomeIcon icon={faArrowRight} />
           </button>
+
         </div>
       </div>
       <div className="contact-template">

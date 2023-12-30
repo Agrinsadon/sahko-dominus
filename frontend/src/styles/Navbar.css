@@ -30,8 +30,9 @@ box-shadow: 0 2px 4px rgba(254, 216, 93, 0.5); /* Updated box-shadow color */
 }
 
 .sahkodominus-logo {
-width: 240px;
-height: 70px;
+    width: 240px;
+    height: 70px;
+    cursor: pointer;
 }
 
 .nav-links {
@@ -39,12 +40,17 @@ display: flex;
 }
 
 .nav-links a {
+cursor: pointer;
 font-family: 'Zen Antique Soft', sans-serif;
 color: #FED85D;
 text-decoration: none;
 transition: color 0.3s ease;
 margin: 0px 25px;
 }
+
+.nav-links a.active {
+    color: #fbf2d2;
+  }
 
 .nav-links a:hover {
 color: #fbf2d2;

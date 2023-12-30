@@ -2,7 +2,7 @@
 import React from 'react';
 import '../styles/Service.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; // Assuming you are using FontAwesome icons
-import { faLightbulb, faPlug, faTowerCell, faBolt, faCompassDrafting, faBathtub, faUtensils } from '@fortawesome/free-solid-svg-icons';
+import { faLightbulb, faPlug, faTowerCell, faBolt, faBathtub, faUtensils, faScrewdriverWrench } from '@fortawesome/free-solid-svg-icons';
 
 
 const boxes = [
@@ -10,7 +10,7 @@ const boxes = [
   { icon: faBolt, header: 'Sähköasennukset', text: 'Enjoy a cup of coffee with us.' },
   { icon: faPlug, header: 'Pistorasian asennus ja huolto', text: 'Enjoy a cup of coffee with us.' },
   { icon: faLightbulb, header: 'Valaistuksen asennus ja huolto', text: 'Enjoy a cup of coffee with us.' },
-  { icon: faCompassDrafting, header: 'Sähköurakointi', text: 'Enjoy a cup of coffee with us.' },
+  { icon: faScrewdriverWrench, header: 'Sähköurakointi', text: 'Enjoy a cup of coffee with us.' },
   { icon: faBathtub, header: 'Kylpyhuoneremontti', text: 'Enjoy a cup of coffee with us.' },
   { icon: faUtensils, header: 'Keittiöremontti', text: 'Enjoy a cup of coffee with us.' },
 ];
