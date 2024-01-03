@@ -11,6 +11,8 @@ const Contact = () => {
     email: '',
     phone: '',
     address: '',
+    postcode: '',
+    city: '',
     message: '',
   });
 
@@ -44,6 +46,8 @@ const Contact = () => {
         email: '',
         phone: '',
         address: '',
+        postcode: '',
+        city: '',
         message: '',
       });
     })
