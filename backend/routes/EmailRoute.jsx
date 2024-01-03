@@ -8,7 +8,7 @@ router.use(bodyParser.urlencoded({ extended: true }));
 router.use(bodyParser.json());
 
 function validateRequiredFields(req, res, next) {
-  const requiredFields = ['name', 'email', 'phone', 'address','postcode','city', 'message'];
+  const requiredFields = ['name', 'email', 'phone', 'address', 'postcode', 'city', 'message'];
 
   for (const field of requiredFields) {
     if (!req.body[field]) {

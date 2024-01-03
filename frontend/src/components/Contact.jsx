@@ -4,6 +4,8 @@ import { faArrowRight, faEnvelope, faPhone, faGlobe } from '@fortawesome/free-so
 import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import '../styles/Contact.css';
 
+const apiUrl = process.env.REACT_APP_API_URL_EMAIL;
+
 const Contact = () => {
   const [isSending, setIsSending] = useState(false);
   const [formData, setFormData] = useState({
@@ -26,7 +28,7 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setIsSending(true);
-    fetch('https://sahkodominus.onrender.com/email/send-email', {
+    fetch(apiUrl, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
