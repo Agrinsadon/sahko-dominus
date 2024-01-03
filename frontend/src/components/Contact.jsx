@@ -27,6 +27,7 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    console.log('apiUrl:', apiUrl);
     setIsSending(true);
     fetch(apiUrl, {
       method: 'POST',
