@@ -8,7 +8,7 @@ router.use(bodyParser.urlencoded({ extended: true }));
 router.use(bodyParser.json());
 
 function validateRequiredFields(req, res, next) {
-  const requiredFields = ['name', 'email', 'phone', 'address', 'message'];
+  const requiredFields = ['name', 'email', 'phone', 'address','postcode','city', 'message'];
 
   for (const field of requiredFields) {
     if (!req.body[field]) {
@@ -25,11 +25,11 @@ function validateRequiredFields(req, res, next) {
 }
 
 router.post('/send-email', validateRequiredFields, (req, res) => {
-  const { name, email, phone, address, message } = req.body;
+  const { name, email, phone, address, postcode, city, message } = req.body;
 
   console.log('Received data:', req.body);
 
-  sendEmail(name, email, phone, address, message, (error, info) => {
+  sendEmail(name, email, phone, address, postcode, city, message, (error, info) => {
     if (error) {
       return res.status(500).json({ error: error.toString() });
     }

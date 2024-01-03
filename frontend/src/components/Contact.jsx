@@ -79,6 +79,16 @@ const Contact = () => {
               <input type="text" id="address" placeholder="Syötä Osoite" value={formData.address} onChange={handleInputChange} />
             </div>
           </div>
+          <div className="input-group-row">
+            <div className="input-group">
+              <label htmlFor="postcode">Postinumero</label>
+              <input type="text" id="postcode" placeholder="Syötä postinumero" value={formData.postcode} onChange={handleInputChange} />
+            </div>
+            <div className="input-group">
+              <label htmlFor="city">Kaupunki</label>
+              <input type="text" id="city" placeholder="Syötä kaupunki" value={formData.city} onChange={handleInputChange} />
+            </div>
+          </div>
           <div className="input-group">
             <label htmlFor="message">Viesti</label>
             <textarea type="text" id="message" placeholder="Syötä viesti..." value={formData.message} onChange={handleInputChange} />

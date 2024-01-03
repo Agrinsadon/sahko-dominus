@@ -2,7 +2,7 @@ const nodemailer = require('nodemailer');
 require('dotenv').config();
 
 function sendEmail(name, email, phone, address, message, callback) {
-  const emailContent = `Nimi: ${name}\nSähköposti: ${email}\nPuhelin: ${phone}\nOsoite: ${address}\nViesti: ${message}`;
+  const emailContent = `Nimi: ${name}\nSähköposti: ${email}\nPuhelin: ${phone}\nOsoite: ${address}\nPostinumero: ${postcode}\nKaupunki: ${city}\nViesti: ${message}`;
 
 const transporter = nodemailer.createTransport({
     host: 'smtp.gmail.com',
