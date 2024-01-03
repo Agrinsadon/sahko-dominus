@@ -4,7 +4,7 @@ import { faArrowRight, faEnvelope, faPhone, faGlobe } from '@fortawesome/free-so
 import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import '../styles/Contact.css';
 
-const apiUrl = process.env.REACT_APP_API_URL_EMAIL;
+const gmailUrl = process.env.REACT_APP_API_URL_GMAIL;
 
 const Contact = () => {
   const [isSending, setIsSending] = useState(false);
@@ -28,7 +28,7 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setIsSending(true);
-    fetch(apiUrl, {
+    fetch(gmailUrl, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
