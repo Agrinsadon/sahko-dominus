@@ -4,6 +4,7 @@ import { Element } from 'react-scroll';
 import '../styles/Home.css';
 import Service from './Service';
 import Contact from './Contact';
+import Pricing from './Pricing';
 
 const Home = () => {
   const [showLinks, setShowLinks] = useState(false);
@@ -48,6 +49,7 @@ const Home = () => {
           </div>
         </div>
         <Element name="service"> <Service /> </Element>
+        <Element name="pricing-section"> <Pricing /> </Element>
       </div>
       <Element name="contact-section"> <Contact /> </Element>
     </div>

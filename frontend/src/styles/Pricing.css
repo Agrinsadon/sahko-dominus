@@ -1,0 +1,45 @@
+.pricing-container {
+    font-family: 'Zen Antique Soft', sans-serif;
+    width: 93.5%;
+    margin: 0 auto;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #13274f;
+    color: #FED85D;
+  }
+  
+  .pricing-frame {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .big-header-pricing {
+    font-size: 2em;
+    margin-top: 2rem;
+  }
+  
+  .main-text-pricing {
+    font-size: 1.2em;
+    margin-bottom: 4rem;
+  }
+  
+  .small-headers-pricing {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .small-header-pricing {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .small-header-pricing h2 {
+    font-size: 25px;
+  }
+  
+  .small-header-pricing p {
+    margin-bottom: 3rem;
+  }
+  

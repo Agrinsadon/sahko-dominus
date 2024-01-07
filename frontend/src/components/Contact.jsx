@@ -104,6 +104,7 @@ const Contact = () => {
             <FontAwesomeIcon icon={faArrowRight} />
           </button>
 
+
         </div>
       </div>
       <div className="contact-template">

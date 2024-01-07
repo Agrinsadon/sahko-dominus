@@ -71,11 +71,11 @@ const Navbar = () => {
           </ScrollLink>
 
           <ScrollLink
-            to="hinnastot"
+            to="pricing-section"
             smooth={true}
             duration={500}
             onClick={() => setShowLinks(false)}
-            activeClass={activeSection === 'hinnastot' ? 'active' : ''}
+            activeClass={activeSection === 'pricing-section' ? 'active' : ''}
             spy={true}
             onSetActive={handleSetActive}
             offset={screenWidth < 768 ? -20 : -40}
