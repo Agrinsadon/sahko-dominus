@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowRight, faEnvelope, faPhone, faGlobe } from '@fortawesome/free-solid-svg-icons';
+import { faArrowRight, faEnvelope, faPhone, faGlobe, faCheckCircle } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import '../styles/Contact.css';
 
-
 const Contact = () => {
   const [isSending, setIsSending] = useState(false);
+  const [isMessageSent, setIsMessageSent] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -22,11 +22,10 @@ const Contact = () => {
     setFormData({ ...formData, [id]: value });
   };
 
-
-
   const handleSubmit = (e) => {
     e.preventDefault();
     setIsSending(true);
+
     fetch('https://sahkodominus.onrender.com/email/send-email', {
       method: 'POST',
       headers: {
@@ -34,30 +33,34 @@ const Contact = () => {
       },
       body: JSON.stringify(formData),
     })
-    .then((response) => {
-      if (!response.ok) {
-        throw new Error(`Request failed with status ${response.status}`);
-      }
-      return response.json();
-    })
-    .then((data) => {
-      console.log(data);
-      setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        address: '',
-        postcode: '',
-        city: '',
-        message: '',
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error(`Request failed with status ${response.status}`);
+        }
+        return response.json();
+      })
+      .then((data) => {
+        console.log(data);
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          address: '',
+          postcode: '',
+          city: '',
+          message: '',
+        });
+        setIsMessageSent(true);
+        setTimeout(() => {
+          setIsMessageSent(false);
+        }, 4000); // Hide the success message after 3 seconds
+      })
+      .catch((error) => {
+        console.error(error);
+      })
+      .finally(() => {
+        setIsSending(false);
       });
-    })
-    .catch((error) => {
-      console.error(error);
-    })
-    .finally(() => {
-      setIsSending(false);
-    });
   };
 
   return (
@@ -74,6 +77,7 @@ const Contact = () => {
               <input type="text" id="email" placeholder="Syötä sähköposti" value={formData.email} onChange={handleInputChange} />
             </div>
           </div>
+
           <div className="input-group-row">
             <div className="input-group">
               <label htmlFor="phone">Puhelin</label>
@@ -84,6 +88,7 @@ const Contact = () => {
               <input type="text" id="address" placeholder="Syötä Osoite" value={formData.address} onChange={handleInputChange} />
             </div>
           </div>
+
           <div className="input-group-row">
             <div className="input-group">
               <label htmlFor="postcode">Postinumero</label>
@@ -94,17 +99,24 @@ const Contact = () => {
               <input type="text" id="city" placeholder="Syötä kaupunki" value={formData.city} onChange={handleInputChange} />
             </div>
           </div>
+
           <div className="input-group">
             <label htmlFor="message">Viesti</label>
             <textarea type="text" id="message" placeholder="Syötä viesti..." value={formData.message} onChange={handleInputChange} />
           </div>
-          
-          <button className={`button-contact ${isSending ? 'sending' : ''}`} onClick={handleSubmit}>
-            <span>{isSending ? 'Lähetetään...' : 'Lähetä'}</span>
-            <FontAwesomeIcon icon={faArrowRight} />
-          </button>
 
-
+          <div className="button-with-message">
+            <button className={`button-contact ${isSending ? 'sending' : ''}`} onClick={handleSubmit}>
+              <span>{isSending ? 'Lähetetään...' : 'Lähetä'}</span>
+              <FontAwesomeIcon icon={faArrowRight} />
+            </button>
+            {isMessageSent && (
+              <div className="message-sent">
+                <FontAwesomeIcon icon={faCheckCircle} className="message-icon" />
+                <p>Viesti Lähetetty!</p>
+              </div>
+            )}
+          </div>
         </div>
       </div>
       <div className="contact-template">

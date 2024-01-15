@@ -1,226 +1,241 @@
 .contact {
-    font-family: 'Zen Antique Soft', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 5rem;
-  }
-  
-  .contact-square {
-    width: 700px;
-    height: auto;
-    border-radius: 20px;
-    background-color: rgba(3, 0, 28, 0.204);
-    overflow: hidden;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .input-group-row {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .input-group-row .input-group {
-    width: 49%;
-  }
-  
-  .input-group {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
-  }
-  
-  .input-group input {
-    margin-top: 0.5rem;
-    padding: 15px;
-    border-radius: 20px;
-    border-style: none;
-    box-sizing: border-box;
-    font-size: 13px;
-  }
-
-  .input-group label {
-    margin-left: 0.5rem;
-  }
-
-  .input-group textarea {
-    margin-top: 0.5rem;
-    height: 6.4rem;
-    padding: 14px;
-    border-radius: 20px;
-    border-style: none;
-    font-size: 12px;
-  }
-  
- .button-contact {
-    font-size: 14px;
-    font-family: 'Zen Antique Soft', sans-serif;
-    margin-bottom: 1rem;
-    width: 320px;
-    padding: 18px;
-    background-color: #FED85D;
-    color: #13274f;
-    border: none;
-    cursor: pointer;
-    border-radius: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-left: auto;
-  }
-  
-  button:hover {
-    background-color: #fed85d98;
-  }
-
-.contact-template {
-    margin-top: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 3rem;
-  }
-  
-  .template-box {
-    font-family: 'Zen Antique Soft', sans-serif;
-    height: 80px;
-    width: auto;
-    margin-right: 1rem;
-    margin-left: 1rem;
-    border-radius: 20px;
-    padding: 0rem;
-    background-color: #FED85D;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .template-circle {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50px; /* Adjust the circle size as needed */
-    height: 50px; /* Adjust the circle size as needed */
-    border: 2px solid beige;
-    border-radius: 50%;
-    margin-left: 1rem; /* Adjust the distance between the circle and the logo */
-    margin-right: 1rem;
-    transition: all 0.3s ease; /* Smooth transition for hover effect */
-  }
-  
-  .template-circle:hover,
-  .template-logo:hover {
-    transform: scale(1.1); /* Scale up on hover */
-    background-color: aliceblue;
-    color: aqua;
-  }
-
-
-.social-icon {
-    font-size: 20px; /* Adjust the size of social icons */
-    margin-right: 1rem; /* Adjust the spacing between social icons */
-    color: #13274f; /* Set the color for the icons */
-    transition: all 0.3s ease; /* Smooth transition for hover effect */
-    cursor:pointer;
-  }
-  
-  .template-box:hover .social-icon {
-    transform: scale(1.1); /* Scale up social icons on hover */
-  }
-  
-  .template-logo {
-    font-size: 25px;
-    margin-right: 2rem;
-    margin-left: 2rem;
-    transition: all 0.3s ease; /* Smooth transition for hover effect */
-  }
-  
-  .template-box p {
-    margin-right: 2rem;
-    margin-top: 1px;
-  }
-
-  .template-box h4 {
-    margin-right: 2rem;
-    margin-bottom: 5px;
-  }
-
-  
-@media screen and (max-width: 992px) {
-.contact {
-    margin-top: 4rem;
-    }
-    
-.contact-square {
-    max-width: 100%;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
+  font-family: 'Zen Antique Soft', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
 }
-    
+
+.contact-square {
+  width: 700px;
+  height: auto;
+  border-radius: 20px;
+  background-color: rgba(3, 0, 28, 0.204);
+  overflow: hidden;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-group-row .input-group {
+  width: 49%;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
 .input-group input {
-    font-size: 11px;
+  margin-top: 0.5rem;
+  padding: 15px;
+  border-radius: 20px;
+  border-style: none;
+  box-sizing: border-box;
+  font-size: 13px;
 }
 
 .input-group label {
-    font-size: 14px;
+  margin-left: 0.5rem;
 }
 
 .input-group textarea {
-    font-size: 11px;
+  margin-top: 0.5rem;
+  height: 6.4rem;
+  padding: 14px;
+  border-radius: 20px;
+  border-style: none;
+  font-size: 12px;
 }
-    
+
 .button-contact {
+  font-size: 14px;
+  font-family: 'Zen Antique Soft', sans-serif;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 320px;
+  padding: 18px;
+  background-color: #FED85D;
+  color: #13274f;
+  border: none;
+  cursor: pointer;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.button-contact:hover {
+  background-color: #fed85d98;
+}
+
+.contact-template {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 3rem;
+}
+
+.template-box {
+  font-family: 'Zen Antique Soft', sans-serif;
+  height: 80px;
+  width: auto;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  border-radius: 20px;
+  padding: 0rem;
+  background-color: #FED85D;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.template-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px; /* Adjust the circle size as needed */
+  height: 50px; /* Adjust the circle size as needed */
+  border: 2px solid beige;
+  border-radius: 50%;
+  margin-left: 1rem; /* Adjust the distance between the circle and the logo */
+  margin-right: 1rem;
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.template-circle:hover,
+.template-logo:hover {
+  transform: scale(1.1); /* Scale up on hover */
+  background-color: aliceblue;
+  color: aqua;
+}
+
+.social-icon {
+  font-size: 20px; /* Adjust the size of social icons */
+  margin-right: 1rem; /* Adjust the spacing between social icons */
+  color: #13274f; /* Set the color for the icons */
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+  cursor: pointer;
+}
+
+.template-box:hover .social-icon {
+  transform: scale(1.1); /* Scale up social icons on hover */
+}
+
+.template-logo {
+  font-size: 25px;
+  margin-right: 2rem;
+  margin-left: 2rem;
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.template-box p {
+  margin-right: 2rem;
+  margin-top: 1px;
+}
+
+.template-box h4 {
+  margin-right: 2rem;
+  margin-bottom: 5px;
+}
+
+.button-with-message {
+  display: flex;
+  align-items: center;
+}
+
+.message-sent {
+  display: flex;
+  align-items: center;
+  margin-top: 0;
+  margin-left: 7rem;
+}
+
+.message-icon {
+  font-size: 24px; /* Adjust the size of the message icon */
+  margin-right: 0.5rem; /* Adjust the spacing between the icon and the message text */
+  color: green; /* Change the color of the message icon */
+}
+
+@media screen and (max-width: 992px) {
+  .contact {
+    margin-top: 4rem;
+  }
+
+  .contact-square {
+    max-width: 100%;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
+  .input-group input {
+    font-size: 11px;
+  }
+
+  .input-group label {
+    font-size: 14px;
+  }
+
+  .input-group textarea {
+    font-size: 11px;
+  }
+
+  .button-contact {
     font-size: 13px;
     margin-bottom: 0.5rem;
     width: 320px;
     margin-left: 0;
-}
+  }
 
-
-.contact-template {
+  .contact-template {
     margin-top: 0.5rem;
     display: block;
     height: 18rem;
-}
-    
-.template-box {
+  }
+
+  .template-box {
     height: 70px;
     margin-top: 1rem;
     width: fit-content;
     margin-right: auto;
     margin-left: auto;
-}
+  }
 
-.template-circle {
-    width: 40px; 
+  .template-circle {
+    width: 40px;
     height: 40px;
   }
 
-.social-icon {
-    font-size: 18px; 
-}
-
-.template-logo {
+  .social-icon {
     font-size: 18px;
-}
+  }
 
-.template-box p {
+  .template-logo {
+    font-size: 18px;
+  }
+
+  .template-box p {
     margin-right: 2rem;
     margin-top: 1px;
     font-size: 14px;
-}
+  }
 
-.template-box h4 {
+  .template-box h4 {
     margin-right: 2rem;
     margin-bottom: 5px;
     font-size: 14px;
-}
+  }
 
-.second-logo {
+  .second-logo {
     position: absolute;
     margin-left: 88px;
     margin-top: 13px;
@@ -228,5 +243,5 @@
     height: 55px;
     z-index: 9999;
     display: flex;
-}
+  }
 }

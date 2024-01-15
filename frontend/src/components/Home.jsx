@@ -5,11 +5,14 @@ import '../styles/Home.css';
 import Service from './Service';
 import Contact from './Contact';
 import Pricing from './Pricing';
+import AboutUs from './AboutUs';
 
 const Home = () => {
   const [showLinks, setShowLinks] = useState(false);
   const [showCover, setShowCover] = useState(true);
   const [showLogo, setShowLogo] = useState(true);
+  const [currentImage, setCurrentImage] = useState(0);
+  const images = ['/Home.png', '/sahkodominus-logo.png']; // Add more image URLs as needed
 
   useEffect(() => {
     const coverTimeout = setTimeout(() => {
@@ -20,11 +23,16 @@ const Home = () => {
       setShowLogo(false);
     }, 1900);
 
+    const intervalId = setInterval(() => {
+      setCurrentImage((prevImage) => (prevImage + 1) % images.length);
+    }, 10000);
+
     return () => {
       clearTimeout(coverTimeout);
       clearTimeout(logoTimeout);
+      clearInterval(intervalId);
     };
-  }, []);
+  }, [images]);
 
   return (
     <div>
@@ -37,7 +45,7 @@ const Home = () => {
           <img src="/sahkodominus-logo.png" alt="Logo" className="logo-cover-small" style={{ opacity: showLogo ? 1 : 1 }} />
         </div>
         <div className="home">
-          <div className='home-pic-frame' style={{ backgroundImage: `url(/Home.png)` }} loading="lazy" decoding="async">
+          <div className='home-pic-frame' style={{ backgroundImage: `url(${images[currentImage]})` }} loading="lazy" decoding="async">
             <div className='home-main'>
               <h1>Mestari sähköisissä tilanteissa</h1>
               <p>Varaa maksuton kartoitus!</p>
@@ -50,6 +58,7 @@ const Home = () => {
         </div>
         <Element name="service"> <Service /> </Element>
         <Element name="pricing-section"> <Pricing /> </Element>
+        <Element name="Meistä"> <AboutUs /> </Element>
       </div>
       <Element name="contact-section"> <Contact /> </Element>
     </div>
