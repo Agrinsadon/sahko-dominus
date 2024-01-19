@@ -65,6 +65,8 @@ const Contact = () => {
 
   return (
     <div>
+              <h2>adampdawmd</h2>
+
       <div className="contact">
         <div className="contact-square">
           <div className="input-group-row">

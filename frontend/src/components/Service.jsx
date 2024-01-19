@@ -6,13 +6,13 @@ import { faLightbulb, faPlug, faTowerCell, faBolt, faBathtub, faUtensils, faScre
 
 
 const boxes = [
-  { icon: faTowerCell, header: 'Atk- ja antenniasennukset', text: 'Enjoy a cup of coffee with us.' },
-  { icon: faBolt, header: 'Sähköasennukset', text: 'Enjoy a cup of coffee with us.' },
-  { icon: faPlug, header: 'Pistorasian asennus ja huolto', text: 'Enjoy a cup of coffee with us.' },
-  { icon: faLightbulb, header: 'Valaistuksen asennus ja huolto', text: 'Enjoy a cup of coffee with us.' },
-  { icon: faScrewdriverWrench, header: 'Sähköurakointi', text: 'Enjoy a cup of coffee with us.' },
-  { icon: faBathtub, header: 'Kylpyhuoneremontti', text: 'Enjoy a cup of coffee with us.' },
-  { icon: faUtensils, header: 'Keittiöremontti', text: 'Enjoy a cup of coffee with us.' },
+  { icon: faBolt, header: 'Sähköasennukset', text: 'Turvalliset kodin ja yrityksen sähköjärjestelmät' },
+  { icon: faScrewdriverWrench, header: 'Sähköurakointi', text: 'Luotettavaa ja ammattitaitoista työtä jokaiseen projektiin' },
+  { icon: faUtensils, header: 'Keittiöremontti', text: 'Toimiva kokonaisuus ja tyylikäs uudistus arkeesti' },
+  { icon: faBathtub, header: 'Kylpyhuoneremontti', text: 'Tunnelmaa ja käytännölisyyttä tiloihisi' },
+  { icon: faPlug, header: 'Pistorasian lisäys ja huolto', text: 'Laadukkaat pistorasiahuollot ja -asennukset' },
+  { icon: faLightbulb, header: 'Valaistuksen asennus ja huolto', text: 'Valaise tilasi ammattitaidolla' },
+  { icon: faTowerCell, header: 'Atk- ja antenniasennukset', text: 'Vahva yhteys ja sujuva tietotekniikka' },
 ];
 
 const Test = () => {

@@ -6,19 +6,19 @@ const Pricing = () => {
     <div className="pricing-container">
       <div className="pricing-frame">
         <h1 className="big-header-pricing">Hinnastot</h1>
-        <p className="main-text-pricing">Main Text goes here...</p>
+        <p className="main-text-pricing">Veloitamme vähintään 2 tunnin työstä, riippumatta tyn kestosta. Työaika alkaa, kun aloitamme ajon kohteeseen ja päättyy työn valmistuttua. Pöytäkirjan laadintaan käytetty aika lisätään kokonaiskuluihin. Tavoitteemme on tarjota selkeä ja läpinäkyvä hinnoittelumalli.</p>
         <div className="small-headers-pricing">
           <div className="small-header-pricing">
-            <h2>Header 1</h2>
-            <p>Small text 1</p>
+            <h2>Tuntivelotus</h2>
+            <p>55€ alv%0</p>
           </div>
           <div className="small-header-pricing">
-            <h2>Header 2</h2>
-            <p>Small text 2</p>
+            <h2>Kilometrikorvaus per Km</h2>
+            <p>0,68€ alv%0</p>
           </div>
           <div className="small-header-pricing">
-            <h2>Header 3</h2>
-            <p>Small text 3</p>
+            <h2>Viikonloppulisä</h2>
+            <p>+30€ alv%0 per tunti</p>
           </div>
         </div>
       </div>

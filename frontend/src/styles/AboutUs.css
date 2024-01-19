@@ -1,17 +1,19 @@
 .about-us-container {
     display: flex;
-    width: 86.4%;
+    width: 89%;
     border-radius: 30px;
     height: 20rem;
     margin: 5rem auto;
     padding: 50px;
     background-color: #13274f;
     color: #FED85D;
+    overflow: hidden;
   }
   
   .left-section {
     flex: 1;
     padding-left: 30px;
+    padding-right: 50px;
   }
   
   .right-section {

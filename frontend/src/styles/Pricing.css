@@ -1,6 +1,6 @@
 .pricing-container {
     font-family: 'Zen Antique Soft', sans-serif;
-    width: 93.5%;
+    width: 96%;
     margin: 0 auto;
     border-radius: 30px;
     display: flex;
@@ -17,12 +17,15 @@
   
   .big-header-pricing {
     font-size: 2em;
-    margin-top: 2rem;
+    margin-top: 3rem;
+    font-size: 2.3rem;
   }
   
   .main-text-pricing {
-    font-size: 1.2em;
-    margin-bottom: 4rem;
+    font-size: 1.1rem;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
   }
   
   .small-headers-pricing {
@@ -36,10 +39,12 @@
   }
   
   .small-header-pricing h2 {
-    font-size: 25px;
+    font-size: 24px;
+    margin-top: 4rem;
   }
   
   .small-header-pricing p {
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
+    font-size: 19px;
   }
   

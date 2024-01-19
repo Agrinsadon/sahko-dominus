@@ -78,7 +78,7 @@ const Navbar = () => {
             activeClass={activeSection === 'pricing-section' ? 'active' : ''}
             spy={true}
             onSetActive={handleSetActive}
-            offset={screenWidth < 768 ? -20 : -40}
+            offset={screenWidth < 768 ? -100 : -240}
           >
             Hinnastot
             <FontAwesomeIcon icon={faCoins} className="fa-icon" />
@@ -92,7 +92,7 @@ const Navbar = () => {
             activeClass={activeSection === 'Meistä' ? 'active' : ''}
             spy={true}
             onSetActive={handleSetActive}
-            offset={screenWidth < 768 ? -10 : -30}
+            offset={screenWidth < 768 ? -10 : -240}
           >
             Meistä
             <FontAwesomeIcon icon={faUsers} className="fa-icon" />
@@ -106,7 +106,7 @@ const Navbar = () => {
             activeClass={activeSection === 'contact-section' ? 'active' : ''}
             spy={true}
             onSetActive={handleSetActive}
-            offset={screenWidth < 768 ? 0 : -20}
+            offset={screenWidth < 768 ? 0 : -180}
           >
             Yhteystiedot
             <FontAwesomeIcon icon={faPhoneFlip} className="fa-icon" />

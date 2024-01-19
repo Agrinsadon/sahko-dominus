@@ -6,6 +6,7 @@ import Service from './Service';
 import Contact from './Contact';
 import Pricing from './Pricing';
 import AboutUs from './AboutUs';
+import Footer from './Footer';
 
 const Home = () => {
   const [showLinks, setShowLinks] = useState(false);
@@ -61,6 +62,7 @@ const Home = () => {
         <Element name="Meistä"> <AboutUs /> </Element>
       </div>
       <Element name="contact-section"> <Contact /> </Element>
+      <Footer/>
     </div>
   );
 };
