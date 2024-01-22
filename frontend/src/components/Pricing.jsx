@@ -6,7 +6,7 @@ const Pricing = () => {
     <div className="pricing-container">
       <div className="pricing-frame">
         <h1 className="big-header-pricing">Hinnastot</h1>
-        <p className="main-text-pricing">Veloitamme vähintään 2 tunnin työstä, riippumatta tyn kestosta. Työaika alkaa, kun aloitamme ajon kohteeseen ja päättyy työn valmistuttua. Pöytäkirjan laadintaan käytetty aika lisätään kokonaiskuluihin. Tavoitteemme on tarjota selkeä ja läpinäkyvä hinnoittelumalli.</p>
+        <p className="main-text-pricing">Veloitamme vähintään 2 tunnin työstä, riippumatta työn kestosta. Työaika alkaa, kun aloitamme ajon kohteeseen ja päättyy työn valmistuttua. Pöytäkirjan laadintaan käytetty aika lisätään kokonaiskuluihin. Tavoitteemme on tarjota selkeä ja läpinäkyvä hinnoittelumalli.</p>
         <div className="small-headers-pricing">
           <div className="small-header-pricing">
             <h2>Tuntivelotus</h2>

@@ -65,8 +65,8 @@ const Contact = () => {
 
   return (
     <div>
-              <h2>adampdawmd</h2>
-
+      <h1 className="contact-header">Ota yhteyttä!</h1>
+      <p className="contact-text">Meille voit kirjoittaa milloin tahansa! <br/> Varmistamme, että saat vastauksen 24 tunnin sisällä.</p>
       <div className="contact">
         <div className="contact-square">
           <div className="input-group-row">
@@ -124,7 +124,9 @@ const Contact = () => {
       <div className="contact-template">
         <div className="template-box">
           <div className="template-circle">
-            <FontAwesomeIcon icon={faEnvelope} className="template-logo" />
+            <a href="mailto:Diako@sahkodominus.info">
+              <FontAwesomeIcon icon={faEnvelope} className="template-logo" />
+            </a>
           </div>
           <div>
             <h4>Sähköposti</h4>
@@ -134,7 +136,9 @@ const Contact = () => {
 
         <div className="template-box">
           <div className="template-circle">
-            <FontAwesomeIcon icon={faPhone} className="template-logo" />
+            <a href="tel:+358505402222">
+              <FontAwesomeIcon icon={faPhone} className="template-logo" />
+            </a>
           </div>
           <div>
             <h4>Puhelinnumero</h4>
@@ -147,10 +151,10 @@ const Contact = () => {
             <FontAwesomeIcon icon={faGlobe} className="template-logo" />
           </div>
           <div className="social-icons-container">
-            <a href="https://www.facebook.com/profile.php?id=61554687897698" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.facebook.com/profile.php?id=61554477816227" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faFacebook} className="social-icon" />
             </a>
-            <a href="https://www.instagram.com/diaconuri/" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/sahkodominus/" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faInstagram} className="social-icon" />
             </a>
           </div>

@@ -4,7 +4,7 @@
     color: #FED85D;
   }
   
-  .container {
+  .container-footer {
     display: flex;
   }
 
@@ -40,7 +40,7 @@
       text-align: center;
     }
   
-    .container {
+    .container-footer {
       display: inline-block;
       text-align: left;
     }

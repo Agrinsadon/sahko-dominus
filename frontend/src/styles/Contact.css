@@ -3,7 +3,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 5rem;
+  margin-top: 3rem;
+}
+
+.contact-header {
+  font-family: 'Zen Antique Soft', sans-serif;
+  color: #13274f;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.contact-text {
+  font-family: 'Zen Antique Soft', sans-serif;
+  color: #13274f;
+  text-align: center;
+  font-size: 20px;
+  margin: 0;
 }
 
 .contact-square {
@@ -13,7 +28,7 @@
   background-color: #13274f;
   color: #FED85D;
   overflow: hidden;
-  padding: 20px;
+  padding: 35px;
   display: flex;
   flex-direction: column;
 }
@@ -121,6 +136,11 @@
   color: #13274f;
 }
 
+a {
+  color: #FED85D;
+  text-decoration: none; /* Remove underline */
+}
+
 .social-icon {
   font-size: 20px; /* Adjust the size of social icons */
   margin-right: 1rem; /* Adjust the spacing between social icons */
@@ -170,7 +190,16 @@
 
 @media screen and (max-width: 992px) {
   .contact {
-    margin-top: 4rem;
+    margin-top: 2rem;
+  }
+
+  .contact-header {
+    font-size: 2rem;
+  }
+  
+  .contact-text {
+    font-size: 16px;
+    margin: 0;
   }
 
   .contact-square {

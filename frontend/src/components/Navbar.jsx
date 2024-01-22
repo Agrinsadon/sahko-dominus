@@ -106,7 +106,7 @@ const Navbar = () => {
             activeClass={activeSection === 'contact-section' ? 'active' : ''}
             spy={true}
             onSetActive={handleSetActive}
-            offset={screenWidth < 768 ? 0 : -180}
+            offset={screenWidth < 768 ? 0 : -160}
           >
             Yhteystiedot
             <FontAwesomeIcon icon={faPhoneFlip} className="fa-icon" />

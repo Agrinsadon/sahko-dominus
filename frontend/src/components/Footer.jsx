@@ -4,7 +4,7 @@ import '../styles/Footer.css';
 const Footer = () => {
   return (
     <footer className="footer">
-      <div className="container">
+      <div className="container-footer">
       <div className="logo">
         <img src="sahkodominus-logo.png" alt="Your Logo" className='logo-footer' loading='lazy' />
         <p>Mestari sähköisissä tilanteissa</p>

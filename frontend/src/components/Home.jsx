@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link as ScrollLink } from 'react-scroll';
 import Navbar from './Navbar';
 import { Element } from 'react-scroll';
 import '../styles/Home.css';
@@ -13,7 +14,7 @@ const Home = () => {
   const [showCover, setShowCover] = useState(true);
   const [showLogo, setShowLogo] = useState(true);
   const [currentImage, setCurrentImage] = useState(0);
-  const images = ['/Home.png', '/sahkodominus-logo.png']; // Add more image URLs as needed
+  const images = ['/imqge3.jpeg' , '/Home.png'];
 
   useEffect(() => {
     const coverTimeout = setTimeout(() => {
@@ -49,10 +50,14 @@ const Home = () => {
           <div className='home-pic-frame' style={{ backgroundImage: `url(${images[currentImage]})` }} loading="lazy" decoding="async">
             <div className='home-main'>
               <h1>Mestari sähköisissä tilanteissa</h1>
-              <p>Varaa maksuton kartoitus!</p>
+              <h2>Varaa maksuton kartoitus!</h2>
               <div className="buttons-container">
+              <ScrollLink to="contact-section" smooth={true} duration={500} offset={-180}>
                 <button className="cta1-button">Ota yhteyttä</button>
+              </ScrollLink>
+              <ScrollLink to="pricing-section" smooth={true} duration={500} offset={-240}>
                 <button className="cta2-button">Hinnastot</button>
+              </ScrollLink>
               </div>
             </div>
           </div>

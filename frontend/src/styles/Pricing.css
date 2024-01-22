@@ -1,5 +1,6 @@
 .pricing-container {
     font-family: 'Zen Antique Soft', sans-serif;
+    height: auto;
     width: 96%;
     margin: 0 auto;
     border-radius: 30px;
@@ -16,7 +17,7 @@
   }
   
   .big-header-pricing {
-    font-size: 2em;
+    font-size: 2.2rem;
     margin-top: 3rem;
     font-size: 2.3rem;
   }
@@ -46,5 +47,43 @@
   .small-header-pricing p {
     margin-bottom: 4rem;
     font-size: 19px;
+  
   }
+
+  @media screen and (max-width: 992px) {
+    .pricing-container {
+      display: block;
+    }
+    
+    .big-header-pricing {
+      padding-top: 2rem;
+      font-size: 2rem;
+    }
+    
+    .main-text-pricing {
+      font-size: 16px;
+      margin-bottom: 3rem;
+    }
+    
+    .small-headers-pricing {
+      display: block;
+    }
+    
+    .small-header-pricing {
+      flex: 1;
+      text-align: center;
+    }
+    
+    .small-header-pricing h2 {
+      font-size: 22px;
+      margin-top: 0rem;
+    }
+    
+    .small-header-pricing p {
+      padding-bottom: 3rem;
+      font-size: 16px;
+
+    }
+  }
+
   
