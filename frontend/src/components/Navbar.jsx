@@ -92,7 +92,7 @@ const Navbar = () => {
             activeClass={activeSection === 'Meistä' ? 'active' : ''}
             spy={true}
             onSetActive={handleSetActive}
-            offset={screenWidth < 768 ? -10 : -240}
+            offset={screenWidth < 768 ? -110 : -134}
           >
             Meistä
             <FontAwesomeIcon icon={faUsers} className="fa-icon" />
@@ -106,7 +106,7 @@ const Navbar = () => {
             activeClass={activeSection === 'contact-section' ? 'active' : ''}
             spy={true}
             onSetActive={handleSetActive}
-            offset={screenWidth < 768 ? 0 : -160}
+            offset={screenWidth < 768 ? -110 : -160}
           >
             Yhteystiedot
             <FontAwesomeIcon icon={faPhoneFlip} className="fa-icon" />

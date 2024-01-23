@@ -32,7 +32,7 @@ const AboutUs = () => {
       <h1 className="main-title">Tiimimme</h1>
       <div className="sections-container">
         <div className="right-section-second">
-          <div className="right-content-wrapper">
+          <div className="right-content-wrapper-second">
           <p>Kuvat tulee pian</p>
           </div>
         </div>
