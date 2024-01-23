@@ -14,7 +14,7 @@ const Home = () => {
   const [showCover, setShowCover] = useState(true);
   const [showLogo, setShowLogo] = useState(true);
   const [currentImage, setCurrentImage] = useState(0);
-  const images = ['/imqge3.jpeg' , '/Home.png'];
+  const images = ['/imqge3.jpeg' , '/Home.png', '/image4.jpeg', '/image5.jpeg', '/image6.jpeg'];
 
   useEffect(() => {
     const coverTimeout = setTimeout(() => {
