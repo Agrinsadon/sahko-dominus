@@ -26,7 +26,7 @@ const Contact = () => {
     e.preventDefault();
     setIsSending(true);
 
-    fetch(process.env.REACT_APP_API_URL_GMAIL, {
+    fetch('https://sahkodominus-tdqe.onrender.com/email/send-email', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
