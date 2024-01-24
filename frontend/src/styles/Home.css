@@ -58,16 +58,17 @@
     z-index: 0;
   }
 
-  .buttons-container {
-    margin-top: 2rem;
+  .buttons-container-home {
+    margin-top: 1.5rem;
     display: flex;
     justify-content: center;
-  }
+    align-items: center;
+    }
   
   .cta1-button {
     font-family: 'Zen Antique Soft', sans-serif;
     margin: 0 1rem;
-    padding: 0.5rem 1rem;
+    padding: 0.7rem 1rem;
     font-size: 16px;
     background-color: #FED85D;
     color: #13274f;
@@ -84,7 +85,7 @@
   .cta2-button {
     font-family: 'Zen Antique Soft', sans-serif;
     margin: 0 1rem;
-    padding: 0.5rem 1rem;
+    padding: 0.6rem 1rem;
     font-size: 16px;
     background-color: transparent;
     border: 2px solid #FED85D;
@@ -138,15 +139,15 @@
   }
   
   .home-main h1 {
-    font-size: 1.9rem;
+    font-size: 1.8rem;
   }
   
   .home-main p {
-    font-size: 15px;
+    font-size: 16px;
   }
   
   .cta1-button {
-    padding: 0.6rem 0.5rem;
+    padding: 0.4rem 0.5rem;
     font-size: 15px;
   }
 

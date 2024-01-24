@@ -8,8 +8,8 @@ import { faLightbulb, faPlug, faTowerCell, faBolt, faBathtub, faUtensils, faScre
 const boxes = [
   { icon: faBolt, header: 'Sähköasennukset', text: 'Turvalliset kodin ja yrityksen sähköjärjestelmät' },
   { icon: faScrewdriverWrench, header: 'Sähköurakointi', text: 'Luotettavaa ja ammattitaitoista työtä jokaiseen projektiin' },
-  { icon: faUtensils, header: 'Keittiöremontti', text: 'Toimiva kokonaisuus ja tyylikäs uudistus arkeesti' },
-  { icon: faBathtub, header: 'Kylpyhuoneremontti', text: 'Tunnelmaa ja käytännölisyyttä tiloihisi' },
+  { icon: faUtensils, header: 'Keittiöremontti', text: 'Toimiva kokonaisuus ja tyylikäs uudistus arkeesi' },
+  { icon: faBathtub, header: 'Kylpyhuoneremontti', text: 'Tunnelmaa ja käytännöllisyyttä tiloihisi' },
   { icon: faPlug, header: 'Pistorasian lisäys ja huolto', text: 'Laadukkaat pistorasiahuollot ja -asennukset' },
   { icon: faLightbulb, header: 'Valaistuksen asennus ja huolto', text: 'Valaise tilasi ammattitaidolla' },
   { icon: faTowerCell, header: 'Atk- ja antenniasennukset', text: 'Vahva yhteys ja sujuva tietotekniikka' },

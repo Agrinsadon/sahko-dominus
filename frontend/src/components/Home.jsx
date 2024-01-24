@@ -51,7 +51,7 @@ const Home = () => {
             <div className='home-main'>
               <h1>Mestari sähköisissä tilanteissa</h1>
               <h2>Varaa maksuton kartoitus!</h2>
-              <div className="buttons-container">
+              <div className="buttons-container-home">
               <ScrollLink to="contact-section" smooth={true} duration={500} offset={-180}>
                 <button className="cta1-button">Ota yhteyttä</button>
               </ScrollLink>
