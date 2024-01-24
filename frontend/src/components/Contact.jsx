@@ -26,7 +26,7 @@ const Contact = () => {
     e.preventDefault();
     setIsSending(true);
 
-    fetch('https://sahkodominus.onrender.com/email/send-email', {
+    fetch('https://sahkodominus-tdqe.onrender.com/email/send-email', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
