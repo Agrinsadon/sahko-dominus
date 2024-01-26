@@ -53,7 +53,7 @@ const Contact = () => {
         setIsMessageSent(true);
         setTimeout(() => {
           setIsMessageSent(false);
-        }, 4000); // Hide the success message after 3 seconds
+        }, 4000);
       })
       .catch((error) => {
         console.error(error);

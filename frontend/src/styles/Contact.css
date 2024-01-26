@@ -120,44 +120,44 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 50px; /* Adjust the circle size as needed */
-  height: 50px; /* Adjust the circle size as needed */
+  width: 50px;
+  height: 50px;
   border: 2px solid #FED85D;
   border-radius: 50%;
-  margin-left: 1rem; /* Adjust the distance between the circle and the logo */
+  margin-left: 1rem; 
   margin-right: 1rem;
-  transition: all 0.3s ease; /* Smooth transition for hover effect */
+  transition: all 0.3s ease;
 }
 
 .template-circle:hover,
 .template-logo:hover {
-  transform: scale(1.1); /* Scale up on hover */
+  transform: scale(1.1);
   background-color: #FED85D;
   color: #13274f;
 }
 
 a {
   color: #FED85D;
-  text-decoration: none; /* Remove underline */
+  text-decoration: none;
 }
 
 .social-icon {
-  font-size: 20px; /* Adjust the size of social icons */
-  margin-right: 1rem; /* Adjust the spacing between social icons */
-  color: #FED85D; /* Set the color for the icons */
-  transition: all 0.3s ease; /* Smooth transition for hover effect */
+  font-size: 20px;
+  margin-right: 1rem; 
+  color: #FED85D;
+  transition: all 0.3s ease;
   cursor: pointer;
 }
 
 .template-box:hover .social-icon {
-  transform: scale(1.1); /* Scale up social icons on hover */
+  transform: scale(1.1);
 }
 
 .template-logo {
   font-size: 25px;
   margin-right: 2rem;
   margin-left: 2rem;
-  transition: all 0.3s ease; /* Smooth transition for hover effect */
+  transition: all 0.3s ease; 
 }
 
 .template-box p {

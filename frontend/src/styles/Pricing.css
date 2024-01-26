@@ -1,37 +1,71 @@
 .pricing-container {
-    font-family: 'Zen Antique Soft', sans-serif;
-    height: auto;
-    width: 96%;
-    margin: 0 auto;
-    border-radius: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #13274f;
-    color: #FED85D;
-  }
+  font-family: 'Zen Antique Soft', sans-serif;
+  height: auto;
+  width: 96%;
+  margin: 0 auto;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #13274f;
+  color: #FED85D;
+}
   
-  .pricing-frame {
-    width: 100%;
-    text-align: center;
+.pricing-frame {
+  width: 100%;
+  text-align: center;
+}
+  
+.big-header-pricing {
+  font-size: 2.2rem;
+  margin-top: 3rem;
+  font-size: 2.3rem;
+}
+
+.main-text-pricing {
+  font-size: 1.1rem;
+  width: 90%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.small-headers-pricing {
+  display: flex;
+  justify-content: space-between;
+}
+
+.small-header-pricing {
+  flex: 1;
+  text-align: center;
+}
+
+.small-header-pricing h2 {
+  font-size: 24px;
+  margin-top: 4rem;
+}
+
+.small-header-pricing p {
+  margin-bottom: 4rem;
+  font-size: 19px;
+}
+
+@media screen and (max-width: 992px) {
+  .pricing-container {
+    display: block;
   }
   
   .big-header-pricing {
-    font-size: 2.2rem;
-    margin-top: 3rem;
-    font-size: 2.3rem;
+    padding-top: 2rem;
+    font-size: 2rem;
   }
   
   .main-text-pricing {
-    font-size: 1.1rem;
-    width: 90%;
-    text-align: center;
-    margin: 0 auto;
+    font-size: 16px;
+    margin-bottom: 3rem;
   }
   
   .small-headers-pricing {
-    display: flex;
-    justify-content: space-between;
+    display: block;
   }
   
   .small-header-pricing {
@@ -40,50 +74,15 @@
   }
   
   .small-header-pricing h2 {
-    font-size: 24px;
-    margin-top: 4rem;
+    font-size: 22px;
+    margin-top: 0rem;
   }
   
   .small-header-pricing p {
-    margin-bottom: 4rem;
-    font-size: 19px;
-  
-  }
+    padding-bottom: 3rem;
+    font-size: 16px;
 
-  @media screen and (max-width: 992px) {
-    .pricing-container {
-      display: block;
-    }
-    
-    .big-header-pricing {
-      padding-top: 2rem;
-      font-size: 2rem;
-    }
-    
-    .main-text-pricing {
-      font-size: 16px;
-      margin-bottom: 3rem;
-    }
-    
-    .small-headers-pricing {
-      display: block;
-    }
-    
-    .small-header-pricing {
-      flex: 1;
-      text-align: center;
-    }
-    
-    .small-header-pricing h2 {
-      font-size: 22px;
-      margin-top: 0rem;
-    }
-    
-    .small-header-pricing p {
-      padding-bottom: 3rem;
-      font-size: 16px;
-
-    }
   }
+}
 
   

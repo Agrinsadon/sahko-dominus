@@ -1,117 +1,117 @@
 .home {
-    padding-top: 0rem;
-    height: 51rem;
-  }
+  padding-top: 0rem;
+  height: 51rem;
+}
   
-  .home-main {
-    font-family: 'Zen Antique Soft', sans-serif;
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-    width: 100%;
-    margin: 0 auto;
-  }
+.home-main {
+  font-family: 'Zen Antique Soft', sans-serif;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  width: 100%;
+  margin: 0 auto;
+}
   
-  .home-main h1 {
-    z-index: 1;
-    font-size: 2.8rem;
-    color: #FED85D;
-    margin-bottom: 1rem;
-  }
-  
-  .home-main h2 {
-    z-index: 1;
-    font-size: 17px;
-    margin-left: 3rem;
-    margin-right: 3rem;
-    color: #FED85D;
-  }
-  
-  .home-main h1,
-  .home-main p {
-      opacity: 5;
-  }
-  
-  .home-pic-frame {
-    transition: background-image 1s ease; /* Adjust the transition duration as needed */
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .home-pic-frame::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    backdrop-filter: blur(2px);
-    background-color: #13274fb7;
-    z-index: 0;
+.home-main h1 {
+  z-index: 1;
+  font-size: 2.8rem;
+  color: #FED85D;
+  margin-bottom: 1rem;
+}
+
+.home-main h2 {
+  z-index: 1;
+  font-size: 17px;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  color: #FED85D;
+}
+
+.home-main h1,
+.home-main p {
+  opacity: 5;
+}
+
+.home-pic-frame {
+  transition: background-image 1s ease;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+
+.home-pic-frame::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  backdrop-filter: blur(2px);
+  background-color: #13274fb7;
+  z-index: 0;
+}
+
+.buttons-container-home {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   }
 
-  .buttons-container-home {
-    margin-top: 1.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    }
-  
-  .cta1-button {
-    font-family: 'Zen Antique Soft', sans-serif;
-    margin: 0 1rem;
-    padding: 0.7rem 1rem;
-    font-size: 16px;
-    background-color: #FED85D;
-    color: #13274f;
-    border: none;
-    cursor: pointer;
-    border-radius: 7px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .cta1-button:hover {
-    background-color: #fed85db1;
-  }
+.cta1-button {
+  font-family: 'Zen Antique Soft', sans-serif;
+  margin: 0 1rem;
+  padding: 0.7rem 1rem;
+  font-size: 16px;
+  background-color: #FED85D;
+  color: #13274f;
+  border: none;
+  cursor: pointer;
+  border-radius: 7px;
+  transition: background-color 0.3s ease;
+}
 
-  .cta2-button {
-    font-family: 'Zen Antique Soft', sans-serif;
-    margin: 0 1rem;
-    padding: 0.6rem 1rem;
-    font-size: 16px;
-    background-color: transparent;
-    border: 2px solid #FED85D;
-    cursor: pointer;
-    border-radius: 7px;
-    color: #FED85D;
-    transition: background-color 0.3s ease;
-  }
+.cta1-button:hover {
+  background-color: #fed85db1;
+}
 
-  .cta2-button:hover {
-    background-color: #fed85db1; 
-  }
+.cta2-button {
+  font-family: 'Zen Antique Soft', sans-serif;
+  margin: 0 1rem;
+  padding: 0.6rem 1rem;
+  font-size: 16px;
+  background-color: transparent;
+  border: 2px solid #FED85D;
+  cursor: pointer;
+  border-radius: 7px;
+  color: #FED85D;
+  transition: background-color 0.3s ease;
+}
 
-  .cover {
-    background-color: #13274f;
-    height: 100%;
-    width: 100%;
-    transition: height 1.3s ease-out;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 9998;
-  }
+.cta2-button:hover {
+  background-color: #fed85db1; 
+}
+
+.cover {
+  background-color: #13274f;
+  height: 100%;
+  width: 100%;
+  transition: height 1.3s ease-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9998;
+}
   
 .logo-cover {
   width: 400px;
@@ -127,67 +127,66 @@
    display: none;
 }
 
-
 @media screen and (max-width: 992px) {
 .home {
-    padding-top: 0rem;
-    height: 42rem;
-  } 
-  
-  .home-main {
-    top: 50%;
-  }
-  
-  .home-main h1 {
-    font-size: 1.8rem;
-  }
-  
-  .home-main p {
-    font-size: 16px;
-  }
-  
-  .cta1-button {
-    padding: 0.4rem 0.5rem;
-    font-size: 15px;
-  }
+  padding-top: 0rem;
+  height: 42rem;
+} 
 
-  .cta2-button {
-    padding: 0.3rem 0.7rem;
-    font-size: 15px;
-  }
+.home-main {
+  top: 50%;
+}
 
-  .logo-cover {
-    display: none;
-  }
+.home-main h1 {
+  font-size: 1.8rem;
+}
 
-  .cover-small {
-    background-color: #13274f;
-    height: 100%;
-    width: 100%;
-    transition: height 1s ease-out;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 9998;
-  }
+.home-main p {
+  font-size: 16px;
+}
 
-  .sahkodominus-logo {
-    display: none;
-  }
-  
-  .logo-cover-small {
-    padding-top: 5rem;
-    width: 200px;
-    height: 55px;
-    opacity: 1;
-    transition: opacity 1s ease-in-out;
-    position: absolute;
-    top: 43%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 9999;
-  }
+.cta1-button {
+  padding: 0.4rem 0.5rem;
+  font-size: 15px;
+}
+
+.cta2-button {
+  padding: 0.3rem 0.7rem;
+  font-size: 15px;
+}
+
+.logo-cover {
+  display: none;
+}
+
+.cover-small {
+  background-color: #13274f;
+  height: 100%;
+  width: 100%;
+  transition: height 1s ease-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9998;
+}
+
+.sahkodominus-logo {
+  display: none;
+}
+
+.logo-cover-small {
+  padding-top: 5rem;
+  width: 200px;
+  height: 55px;
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+  position: absolute;
+  top: 43%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
 }

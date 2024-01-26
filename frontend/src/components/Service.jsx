@@ -1,7 +1,7 @@
 // Test.js
 import React from 'react';
 import '../styles/Service.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; // Assuming you are using FontAwesome icons
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLightbulb, faPlug, faTowerCell, faBolt, faBathtub, faUtensils, faScrewdriverWrench } from '@fortawesome/free-solid-svg-icons';
 
 

@@ -1,16 +1,14 @@
 import React from 'react';
-import '../styles/AboutUs.css'; // Import your CSS file
-import logo from '/sahkodominus-logo.png'; // Import your logo and update the path
+import '../styles/AboutUs.css';
+import logo from '/sahkodominus-logo.png';
 
 
 const AboutUs = () => {
   return (
     <div>
-      {/* First About Us Container */}
       <div className="about-us-container">
       <h1 className="main-title">Meistä</h1>
       <div className="sections-container">
-
         <div className="left-section">
         <h2 className="sub-title"><img src={logo} alt="Logo" className="logo" /></h2>
           <p>Tervetuloa Sähkö Dominukseen! Yrityksemme tarina alkoi vuonna 2023 heinäkuussa, kun päätimme perustaa yrityksen intohimostamme sähkötekniikkaan. Tavoitteenamme on kasvattaa yrityksemme ja tehdä siitä johtava sähkötekniikan asiantuntija ja asennuspalvelu alalla.
@@ -26,8 +24,6 @@ const AboutUs = () => {
         </div>
         </div>
       </div>
-
-      {/* Second About Us Container */}
       <div className="about-us-container">
       <h1 className="main-title">Tiimimme</h1>
       <div className="sections-container">
