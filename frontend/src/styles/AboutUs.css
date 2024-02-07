@@ -147,10 +147,12 @@
 
   .left-section p {
     font-size: 16px;
+    text-align: left;
   }
 
   .left-section-second p {
     font-size: 16px;
+    text-align: left;
   }
   
   .right-section {
