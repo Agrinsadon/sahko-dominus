@@ -90,7 +90,7 @@
 
 .message-icon {
   font-size: 20px;
-  margin-left: 2rem;
+  margin-left: 1rem;
 }
 
 .contact-template {
@@ -209,7 +209,6 @@ a {
     font-size: 13px;
     margin-bottom: 0.5rem;
     width: 310px;
-    margin-left: 0;
   }
 
   .contact-template {
@@ -260,14 +259,8 @@ a {
     z-index: 9999;
     display: flex;
   }
-
-  .button-with-message {
-    display: block;
-    align-items: center;
-  }
   
   .message-icon {
-    display: flex;
     font-size: 24px;
     margin-right: 0.5rem;
   }
