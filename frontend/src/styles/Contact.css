@@ -89,9 +89,8 @@
 }
 
 .message-icon {
-  display: flex;
-  font-size: 30px;
-  margin-right: 2rem;
+  font-size: 20px;
+  margin-right: 1rem;
 }
 
 .contact-template {
