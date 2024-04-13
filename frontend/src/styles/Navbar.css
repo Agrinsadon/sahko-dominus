@@ -37,6 +37,7 @@
 
 .nav-links {
     display: flex;
+    z-index: 1000;
 }
 
 .nav-links a {
@@ -45,7 +46,7 @@
     color: #FED85D;
     text-decoration: none;
     transition: color 0.3s ease;
-    margin: 0px 25px;
+    margin: 0 25px;
 }
 
 .nav-links a.active {
