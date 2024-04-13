@@ -66,7 +66,7 @@ const Contact = () => {
   return (
       <div>
         <h1 className="contact-header">Ota yhteyttä!</h1>
-        <p className="contact-text">Meille voit kirjoittaa milloin tahansa! <br/> Varmistamme, että saat vastauksen 24 tunnin sisällä.</p>
+        <p className="contact-text">Meille voit kirjoittaa milloin tahansa! <br/> Saat vastauksen 24 tunnin sisällä.</p>
         <div className="contact">
           <div className="contact-square">
             <div className="input-group-row">

@@ -88,22 +88,10 @@
   background-color: #fed85d98;
 }
 
-
-.button-contact:after {
-  content: '';
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background: linear-gradient(to right, transparent 50%, #FED85D 50%);
-  background-size: 200% 100%;
-  background-position: right bottom;
-  transition: background-position 1s;
-}
-
-.button-contact.sending:after {
-  background-position: left bottom;
+.message-icon {
+  display: flex;
+  font-size: 30px;
+  margin-right: 2rem;
 }
 
 .contact-template {
@@ -279,17 +267,9 @@ a {
     align-items: center;
   }
   
-  .message-sent {
-    display: flex;
-    align-items: center;
-    margin-top: 0;
-    margin-left: 5rem;
-  }
-  
   .message-icon {
     display: flex;
     font-size: 24px;
     margin-right: 0.5rem;
-    color: green;
   }
 }
