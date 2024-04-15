@@ -20,7 +20,7 @@
     max-width: 1400px;
     width: 95%; 
     background-color: #13274F;
-    z-index: 1000; 
+    z-index: 9998;
     position: fixed;
     top: 0;
     left: 0;
