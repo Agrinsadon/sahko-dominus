@@ -64,7 +64,7 @@ const Contact = () => {
   };
 
   return (
-      <div>
+      <div className="contact-background">
         <h1 className="contact-header">Ota yhteyttä!</h1>
         <p className="contact-text">Meille voit kirjoittaa milloin tahansa! <br/> Saat vastauksen 24 tunnin sisällä.</p>
         <div className="contact">

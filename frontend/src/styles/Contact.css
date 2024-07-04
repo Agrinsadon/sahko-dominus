@@ -1,3 +1,7 @@
+.contact-background {
+  background-color: white;
+}
+
 .contact {
   font-family: 'Zen Antique Soft', sans-serif;
   display: flex;
@@ -10,6 +14,7 @@
   font-family: 'Zen Antique Soft', sans-serif;
   color: #13274f;
   text-align: center;
+  margin-top: 0;
   font-size: 2.5rem;
 }
 
@@ -100,7 +105,7 @@
   justify-content: center;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 3rem;
+  padding-bottom: 3rem;
 }
 
 .template-box {

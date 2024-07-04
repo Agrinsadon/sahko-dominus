@@ -5,7 +5,7 @@ import logo from '/sahkodominus-logo.png';
 
 const AboutUs = () => {
   return (
-    <div>
+    <div className="about-us-background">
       <div className="about-us-container">
       <h1 className="main-title">Meistä</h1>
       <div className="sections-container">

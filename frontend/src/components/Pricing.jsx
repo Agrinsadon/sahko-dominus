@@ -3,6 +3,7 @@ import '../styles/Pricing.css';
 
 const Pricing = () => {
   return (
+      <div className="pricing-background">
     <div className="pricing-container">
       <div className="pricing-frame">
         <h1 className="big-header-pricing">Hinnastot</h1>
@@ -23,6 +24,7 @@ const Pricing = () => {
         </div>
       </div>
     </div>
+      </div>
   );
 };
 

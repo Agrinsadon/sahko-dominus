@@ -1,3 +1,8 @@
+.pricing-background {
+  background-color: white;
+  padding-bottom: 5rem ;
+}
+
 .pricing-container {
   font-family: 'Zen Antique Soft', sans-serif;
   height: auto;
@@ -17,7 +22,6 @@
 }
   
 .big-header-pricing {
-  font-size: 2.2rem;
   margin-top: 3rem;
   font-size: 2.3rem;
 }
@@ -50,11 +54,17 @@
 }
 
 @media screen and (max-width: 992px) {
+  .pricing-background {
+    padding-top: 4rem;
+
+  }
+
   .pricing-container {
     display: block;
   }
   
   .big-header-pricing {
+    margin-top: 0;
     padding-top: 2rem;
     font-size: 2rem;
   }
@@ -75,13 +85,13 @@
   
   .small-header-pricing h2 {
     font-size: 22px;
-    margin-top: 0rem;
+    margin-top: 0;
   }
   
   .small-header-pricing p {
     padding-bottom: 3rem;
+    margin-bottom: 0;
     font-size: 16px;
-
   }
 }
 

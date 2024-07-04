@@ -1,10 +1,12 @@
 .footer {
-  background: #13274ff6;
-  padding: 1rem 0;
+  background: rgba(1, 25, 62, 0.69);
+  padding: 1.5rem 0;
   color: #FED85D;
 }
   
 .container-footer {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   display: flex;
 }
 
@@ -16,7 +18,7 @@
 .logo {
   flex: 0.8;
   margin-left: 3rem;
-  margin-right: 0rem;
+  margin-right: 0;
 }
 
 .logo p {
@@ -28,15 +30,14 @@
 }
 
 .copyright {
+  background-color: #13274f;
   text-align: center;
-  margin-top: 3rem;
   padding: 0.5rem 0;
-  background-color: #13274ff6;
 }
 
 @media screen and (max-width: 992px) {
   .footer {
-    padding: 0rem 0;
+    padding: 0 0;
     text-align: center;
   }
 
