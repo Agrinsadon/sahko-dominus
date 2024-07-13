@@ -1,5 +1,3 @@
-// Navbar.js
-
 import React, { useState, useEffect } from 'react';
 import { Link as ScrollLink, Events, animateScroll as scroll, scrollSpy } from 'react-scroll';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

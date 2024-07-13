@@ -18,7 +18,7 @@
     padding: 1rem 3rem;
     margin: 0 auto;
     max-width: 1400px;
-    width: 95%; 
+    width: 95%;
     background-color: #13274F;
     z-index: 9998;
     position: fixed;
@@ -26,7 +26,6 @@
     left: 0;
     right: 0;
     box-shadow: 0 2px 4px rgba(254, 216, 93, 0.5);
-
 }
 
 .sahkodominus-logo {
@@ -82,7 +81,7 @@
 
 .navbar {
     width: 100%;
-    padding: 1.6rem 0rem;
+    padding: 1.6rem 0;
 }
 
 .nav-links {
@@ -91,6 +90,7 @@
     position: absolute;
     padding-top: 1.1rem;
     display: none;
+    transition: top 0.5s ease-in;
 }
 
 .nav-links.show {
@@ -100,7 +100,8 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #13274ff6;
+    background-color: #13274F;
+    transition: right 0.5s ease-out;
 }
 
 .nav-links a {

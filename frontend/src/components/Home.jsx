@@ -21,7 +21,7 @@ const Home = () => {
       setShowLogo(false);
       setTimeout(() => {
         setShowCover(false);
-      }, 1000); // adjust the delay according to your slide animation duration
+      }, 1000);
     }, 1900);
 
     const intervalId = setInterval(() => {
